@@ -1,4 +1,6 @@
-# wikimedia-eventstream-viewer
+# wiki-eventstream-viewer
+
+This is not a wikimedia project but just uses the wikimedia eventstream.
 
 CLI tool for listening to the eventstream and filtering out keywords
 
