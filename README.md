@@ -6,6 +6,7 @@ CLI tool for listening to the eventstream and filtering out keywords
 
 - lets get filter labels for any language from wikidata
 - support selecting specific json properties?
+- add filter for negations 
 ## Install
 
 ```bash
@@ -22,11 +23,16 @@ The upper table is filter hits, the lower part is latest events.
 ## Keyboard shortcuts
 
 ## Filter configuration
+
+This is the first menu, you need to enter a comma separated filter.
+
 | Syntax      | Description             |
 | ----------- | ----------------------- |
 | enter       | Apply filter            |
 
 ## Filter table
+
+After filter is configured any hits on the `event.data` object will land in the upper most table.
 
 | Syntax      | Description             |
 | ----------- | ----------------------- |
