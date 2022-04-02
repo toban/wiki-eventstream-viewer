@@ -18,3 +18,19 @@ Filtering on random things on recent_changes events
 The upper table is filter hits, the lower part is latest events.
 
 ![demo](/images/demo.gif)
+
+## Keyboard shortcuts
+
+## Filter configuration
+| Syntax      | Description             |
+| ----------- | ----------------------- |
+| enter       | Apply filter            |
+
+## Filter table
+
+| Syntax      | Description             |
+| ----------- | ----------------------- |
+| w           | Up in filter hits       |
+| s           | Down in filter hits     |
+| esc         | Back to filter config   |
+| enter       | Go to filter hit        |
