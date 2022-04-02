@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
 import { Text, Box, useInput, Newline, Spacer } from 'ink';
 import open from 'open';
-import { domain, event, Ui } from './ui';
+import { domain, event, filteredEvent, Ui } from './ui';
 
 const FilterTable = ( props: { 
-		filteredEvents: event[] 
+		filteredEvents: filteredEvent[] 
 		domains: domain[]
 		appMenuState: number
 	}) => {
@@ -48,7 +48,7 @@ const FilterTable = ( props: {
 						<Text bold>Domain</Text>
 					</Box>
 					
-					<Box width="10%">
+					<Box width="5%">
 						<Text bold>Time</Text>
 					</Box>
 
@@ -56,8 +56,12 @@ const FilterTable = ( props: {
 						<Text bold>User</Text>
 					</Box>
 
-					<Box width="70%">
+					<Box width="65%">
 						<Text bold>Title</Text>
+					</Box>
+
+					<Box width="10%">
+						<Text bold>Match</Text>
 					</Box>
 				</Box>
 			{
@@ -73,7 +77,7 @@ const FilterTable = ( props: {
 							<Text color={rowColor}>{event.domain}</Text>
 						</Box>
 		
-						<Box width="10%">
+						<Box width="5%">
 							<Text color={rowColor}>{event.time}</Text>
 						</Box>
 
@@ -81,8 +85,12 @@ const FilterTable = ( props: {
 							<Text color={rowColor}>{event.user}</Text>
 						</Box>
 		
-						<Box width="70%">
+						<Box width="65%">
 							<Text color={rowColor}>{event.title}</Text>
+						</Box>
+
+						<Box width="10%">
+							<Text color={rowColor}>{event.matches}</Text>
 						</Box>
 					</Box>
 					)
@@ -98,7 +106,7 @@ const FilterTable = ( props: {
 						<Text bold>Domain</Text>
 					</Box>
 
-					<Box width="10%">
+					<Box width="5%">
 						<Text bold>Events</Text>
 					</Box>
 
@@ -106,7 +114,7 @@ const FilterTable = ( props: {
 						<Text bold>Last user</Text>
 					</Box>
 
-					<Box width="70%">
+					<Box width="75%">
 						<Text bold>Last title</Text>
 					</Box>
 				</Box>
@@ -125,7 +133,7 @@ const FilterTable = ( props: {
 							<Text >{currentDomain.domain}</Text>
 						</Box>
 		
-						<Box width="10%">
+						<Box width="5%">
 							<Text>{currentDomain.numEvents}</Text>
 						</Box>
 
@@ -133,7 +141,7 @@ const FilterTable = ( props: {
 							<Text>{lastEvent?.user}</Text>
 						</Box>
 		
-						<Box width="70%">
+						<Box width="75%">
 							<Text>{lastEvent?.title}</Text>
 						</Box>
 					</Box>

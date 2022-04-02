@@ -35,12 +35,14 @@ const FilterTable = (props) => {
             react_1.default.createElement(ink_1.Box, null,
                 react_1.default.createElement(ink_1.Box, { width: "10%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "Domain")),
-                react_1.default.createElement(ink_1.Box, { width: "10%" },
+                react_1.default.createElement(ink_1.Box, { width: "5%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "Time")),
                 react_1.default.createElement(ink_1.Box, { width: "10%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "User")),
-                react_1.default.createElement(ink_1.Box, { width: "70%" },
-                    react_1.default.createElement(ink_1.Text, { bold: true }, "Title"))),
+                react_1.default.createElement(ink_1.Box, { width: "65%" },
+                    react_1.default.createElement(ink_1.Text, { bold: true }, "Title")),
+                react_1.default.createElement(ink_1.Box, { width: "10%" },
+                    react_1.default.createElement(ink_1.Text, { bold: true }, "Match"))),
             /* [...domains.keys()] */
             props.filteredEvents.map((event, index) => {
                 const selected = index == selectedIndex;
@@ -48,23 +50,25 @@ const FilterTable = (props) => {
                 return (react_1.default.createElement(ink_1.Box, { key: event.id },
                     react_1.default.createElement(ink_1.Box, { width: "10%" },
                         react_1.default.createElement(ink_1.Text, { color: rowColor }, event.domain)),
-                    react_1.default.createElement(ink_1.Box, { width: "10%" },
+                    react_1.default.createElement(ink_1.Box, { width: "5%" },
                         react_1.default.createElement(ink_1.Text, { color: rowColor }, event.time)),
                     react_1.default.createElement(ink_1.Box, { width: "10%" },
                         react_1.default.createElement(ink_1.Text, { color: rowColor }, event.user)),
-                    react_1.default.createElement(ink_1.Box, { width: "70%" },
-                        react_1.default.createElement(ink_1.Text, { color: rowColor }, event.title))));
+                    react_1.default.createElement(ink_1.Box, { width: "65%" },
+                        react_1.default.createElement(ink_1.Text, { color: rowColor }, event.title)),
+                    react_1.default.createElement(ink_1.Box, { width: "10%" },
+                        react_1.default.createElement(ink_1.Text, { color: rowColor }, event.matches))));
             })),
         react_1.default.createElement(ink_1.Newline, null),
         react_1.default.createElement(ink_1.Box, { flexDirection: "column", height: props.domains.length, width: "100%" },
             react_1.default.createElement(ink_1.Box, null,
                 react_1.default.createElement(ink_1.Box, { width: "10%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "Domain")),
-                react_1.default.createElement(ink_1.Box, { width: "10%" },
+                react_1.default.createElement(ink_1.Box, { width: "5%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "Events")),
                 react_1.default.createElement(ink_1.Box, { width: "10%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "Last user")),
-                react_1.default.createElement(ink_1.Box, { width: "70%" },
+                react_1.default.createElement(ink_1.Box, { width: "75%" },
                     react_1.default.createElement(ink_1.Text, { bold: true }, "Last title"))),
             /* [...domains.keys()] */
             props.domains.map((currentDomain) => {
@@ -72,11 +76,11 @@ const FilterTable = (props) => {
                 return (react_1.default.createElement(ink_1.Box, { key: currentDomain.domain },
                     react_1.default.createElement(ink_1.Box, { width: "10%" },
                         react_1.default.createElement(ink_1.Text, null, currentDomain.domain)),
-                    react_1.default.createElement(ink_1.Box, { width: "10%" },
+                    react_1.default.createElement(ink_1.Box, { width: "5%" },
                         react_1.default.createElement(ink_1.Text, null, currentDomain.numEvents)),
                     react_1.default.createElement(ink_1.Box, { width: "10%" },
                         react_1.default.createElement(ink_1.Text, null, lastEvent === null || lastEvent === void 0 ? void 0 : lastEvent.user)),
-                    react_1.default.createElement(ink_1.Box, { width: "70%" },
+                    react_1.default.createElement(ink_1.Box, { width: "75%" },
                         react_1.default.createElement(ink_1.Text, null, lastEvent === null || lastEvent === void 0 ? void 0 : lastEvent.title))));
             })));
 };

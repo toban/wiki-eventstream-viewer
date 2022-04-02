@@ -9,6 +9,9 @@ export interface event {
     date: string;
     time: string;
 }
+export interface filteredEvent extends event {
+    matches: string[];
+}
 export interface domain {
     domain: string;
     title: string;

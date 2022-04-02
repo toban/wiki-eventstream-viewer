@@ -13,6 +13,10 @@ export interface event {
 	time: string
 }
 
+export interface filteredEvent extends event{
+	matches: string[]
+}
+
 export interface domain {
 	domain: string
 	title: string
@@ -36,7 +40,7 @@ const App: FC<{name?: string}> = () => {
 	const maxHeight: number = 20;
 	const [domains, setDomains] = React.useState(new Map<string, domain>());
 	const [domainStack, setDomainStack] = React.useState<string[]>([]);
-	const [filterBuffer, setFilterBuffer] = React.useState<event[]>([]);
+	const [filterBuffer, setFilterBuffer] = React.useState<filteredEvent[]>([]);
 	
 	const [menuState, setMenuState] = React.useState<number>(Ui.FilterConfig);
 	const [query, setQuery] = React.useState('');
@@ -96,7 +100,8 @@ const App: FC<{name?: string}> = () => {
 			
 			if(socket?.filter) {
 
-				if(socket.filter.test(event.data)) {
+				const matches = event.data.match(socket.filter);
+				if( matches && matches.length ) {
 					setFilterBuffer(previousFilterBuffer => [
 						{
 							domain: domain,
@@ -105,7 +110,8 @@ const App: FC<{name?: string}> = () => {
 							uri: parsedData.meta.uri,
 							id: parsedData.meta.id,
 							date: parsedData.meta.dt.slice(0,10),
-							time: parsedData.meta.dt.slice(11,19)
+							time: parsedData.meta.dt.slice(11,19),
+							matches: matches
 						},
 						...previousFilterBuffer
 					].slice(0, maxHeight));

@@ -1,6 +1,6 @@
-import { domain, event } from './ui';
+import { domain, filteredEvent } from './ui';
 declare const FilterTable: (props: {
-    filteredEvents: event[];
+    filteredEvents: filteredEvent[];
     domains: domain[];
     appMenuState: number;
 }) => JSX.Element;

@@ -63,7 +63,8 @@ const App = () => {
             const parsedData = JSON.parse(event.data);
             const domain = parsedData.meta.domain;
             if (socket === null || socket === void 0 ? void 0 : socket.filter) {
-                if (socket.filter.test(event.data)) {
+                const matches = event.data.match(socket.filter);
+                if (matches && matches.length) {
                     setFilterBuffer(previousFilterBuffer => [
                         {
                             domain: domain,
@@ -72,7 +73,8 @@ const App = () => {
                             uri: parsedData.meta.uri,
                             id: parsedData.meta.id,
                             date: parsedData.meta.dt.slice(0, 10),
-                            time: parsedData.meta.dt.slice(11, 19)
+                            time: parsedData.meta.dt.slice(11, 19),
+                            matches: matches
                         },
                         ...previousFilterBuffer
                     ].slice(0, maxHeight));
