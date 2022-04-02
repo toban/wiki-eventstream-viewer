@@ -11,11 +11,19 @@ CLI tool for listening to the eventstream and filtering out keywords
 - lets get filter labels for any language from wikidata
 - support selecting specific json properties?
 - add filter for negations 
-## Install
+## Install and run
+
+Run locally
 
 ```bash
 npm install
 npm run start
+```
+
+Install globally
+
+```
+npm install -g .
 ```
 
 Filtering on random things on recent_changes events
