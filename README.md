@@ -13,7 +13,7 @@ npm install
 npm run start
 ```
 
-Filtering on russia / ukraine on recent_changes events
+Filtering on random things on recent_changes events
 
 The upper table is filter hits, the lower part is latest events.
 
