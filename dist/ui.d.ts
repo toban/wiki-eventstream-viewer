@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import EventSource from 'eventsource';
 export interface event {
     domain: string;
     title: string;
@@ -13,6 +14,14 @@ export interface domain {
     title: string;
     numEvents: number;
     eventBuffer: event[];
+}
+export declare enum Ui {
+    FilterConfig = 1,
+    FilterTable = 2
+}
+export interface EventSourceSocket {
+    socket: EventSource;
+    filter?: RegExp;
 }
 declare const App: FC<{
     name?: string;
