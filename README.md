@@ -33,4 +33,4 @@ The upper table is filter hits, the lower part is latest events.
 | w           | Up in filter hits       |
 | s           | Down in filter hits     |
 | esc         | Back to filter config   |
-| enter       | Go to filter hit        |
+| enter       | Open page in browser    |
