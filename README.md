@@ -4,6 +4,8 @@ This is not a wikimedia project but just uses the wikimedia eventstream.
 
 CLI tool for listening to the eventstream and filtering out keywords
 
+**This code is hacky and untested and will probably be broken from time to time.**
+
 # todo
 
 - lets get filter labels for any language from wikidata
