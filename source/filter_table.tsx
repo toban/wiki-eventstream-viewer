@@ -31,7 +31,7 @@ const FilterTable = ( props: {
 					}
 		
 					if(event?.uri) {
-						open(event.uri);
+						open('https://' + event.domain + event.uri );//'&action=history?uselang=en'); // todo select at start
 					}
 					
 				}
@@ -44,25 +44,29 @@ const FilterTable = ( props: {
 	return <Box flexDirection="column">
 			<Box flexDirection="column" height={props.filteredEvents.length} width="100%">
 				<Box>
-					<Box width="10%">
+					<Box width="10">
 						<Text bold>Domain</Text>
 					</Box>
-					
-					<Box width="5%">
+
+					<Box width="14">
+						<Text bold>Stream</Text>
+					</Box>
+
+					<Box width="5">
 						<Text bold>Time</Text>
 					</Box>
 
-					<Box width="10%">
+					<Box width="10">
 						<Text bold>User</Text>
 					</Box>
 
-					<Box width="65%">
+					<Box width="55">
 						<Text bold>Title</Text>
 					</Box>
 
-					<Box width="10%">
+					{/* <Box width="10%">
 						<Text bold>Match</Text>
-					</Box>
+					</Box> */}
 				</Box>
 			{
 				/* [...domains.keys()] */
@@ -72,34 +76,37 @@ const FilterTable = ( props: {
 					const rowColor = selected ? "yellow" : "white";
 
 					return (
-					<Box key={event.id}>
+					<Box key={event.time + event.id}>
 						<Box width="10%">
 							<Text color={rowColor}>{event.domain}</Text>
 						</Box>
+
+						<Box width="14">
+							<Text color={rowColor}>{event.stream}</Text>
+						</Box>
 		
-						<Box width="5%">
+						<Box width="5">
 							<Text color={rowColor}>{event.time}</Text>
 						</Box>
 
-						<Box width="10%">
+						<Box width="10">
 							<Text color={rowColor}>{event.user}</Text>
 						</Box>
 		
-						<Box width="65%">
-							<Text color={rowColor}>{event.title}</Text>
+						<Box width="55">
+							<Text color={rowColor}>{event.uri}</Text>
 						</Box>
 
-						<Box width="10%">
+						{/* <Box width="10%">
 							<Text color={rowColor}>{event.matches}</Text>
-						</Box>
+						</Box> */}
 					</Box>
 					)
 					}
 				)
 			}
 			</Box>
-
-			<Newline />
+{/* 
 			<Box flexDirection="column" height={props.domains.length} width="100%">
 				<Box>
 					<Box width="10%">
@@ -119,13 +126,10 @@ const FilterTable = ( props: {
 					</Box>
 				</Box>
 			{
-				/* [...domains.keys()] */
 				props.domains.map((
 						currentDomain
 					) => 
 					{
-
-					const lastEvent = currentDomain.eventBuffer[currentDomain.eventBuffer.length - 1];
 
 					return (
 					<Box key={currentDomain.domain}>
@@ -138,18 +142,18 @@ const FilterTable = ( props: {
 						</Box>
 
 						<Box width="10%">
-							<Text>{lastEvent?.user}</Text>
+							<Text>{currentDomain.lastEvent?.user}</Text>
 						</Box>
 		
 						<Box width="75%">
-							<Text>{lastEvent?.title}</Text>
+							<Text>{currentDomain.lastEvent?.title}</Text>
 						</Box>
 					</Box>
 					)
 					}
 				)
 			}
-			</Box>
+			</Box> */}
 			</Box>
 
 			

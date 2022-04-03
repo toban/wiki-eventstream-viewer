@@ -3,6 +3,7 @@ import React from 'react';
 import {render} from 'ink';
 //import meow from 'meow';
 import App from './ui';
+import StreamSelector from './stream_selector';
 //import EventSource from 'eventsource';
 
 // const cli = meow(`
@@ -22,4 +23,8 @@ import App from './ui';
 // 		}
 // 	}
 // });
+
+const streams = [];
+
+//render(<StreamSelector />);
 render(<App />);

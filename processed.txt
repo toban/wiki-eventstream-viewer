@@ -1,0 +1,1282 @@
+Statistical profiling result from isolate-0x4a45d80-130044-v8.log, (233503 ticks, 948 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  155075   66.4%          /home/toan/.nvm/versions/node/v12.19.1/bin/node
+   1323    0.6%          /lib/x86_64-linux-gnu/libc-2.31.so
+     57    0.0%          [vdso]
+     49    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+     15    0.0%          /lib/x86_64-linux-gnu/libm-2.31.so
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   9662    4.1%   12.6%  LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+   3591    1.5%    4.7%  LazyCompile: *createElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:707:23
+   2404    1.0%    3.1%  LazyCompile: *prepareUpdate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:125:20
+   2311    1.0%    3.0%  LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+   2144    0.9%    2.8%  LazyCompile: *reconcileSingleElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:5363:34
+   1876    0.8%    2.4%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   1495    0.6%    1.9%  LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+   1492    0.6%    1.9%  LazyCompile: *completeWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:11050:22
+   1429    0.6%    1.9%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/eventsource/lib/eventsource.js:191:31
+   1399    0.6%    1.8%  LazyCompile: *completeUnitOfWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15356:28
+   1391    0.6%    1.8%  LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   1072    0.5%    1.4%  LazyCompile: *createElementWithValidation /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2182:37
+   1011    0.4%    1.3%  LazyCompile: *reconcileChildrenArray /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:5010:34
+    885    0.4%    1.1%  LazyCompile: *commitWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:13321:20
+    775    0.3%    1.0%  LazyCompile: *createWorkInProgress /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:17497:30
+    694    0.3%    0.9%  LazyCompile: *__rest /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:21:48
+    685    0.3%    0.9%  LazyCompile: *reconcileChildFibers /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:5473:32
+    655    0.3%    0.9%  LazyCompile: *Text /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Text.js:12:14
+    637    0.3%    0.8%  LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+    616    0.3%    0.8%  LazyCompile: *reconcileSingleTextNode /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:5343:35
+    604    0.3%    0.8%  LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    457    0.2%    0.6%  LazyCompile: *commitBeforeMutationEffects /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15858:37
+    445    0.2%    0.6%  LazyCompile: *commitMutationEffects /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15901:31
+    420    0.2%    0.5%  LazyCompile: *renderNodeToOutput /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/render-node-to-output.js:30:28
+    418    0.2%    0.5%  LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+    364    0.2%    0.5%  LazyCompile: *flushPassiveEffectsImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16057:33
+    359    0.2%    0.5%  LazyCompile: *checkAnsi /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:13:19
+    343    0.1%    0.4%  LazyCompile: *commitLayoutEffects /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15984:29
+    331    0.1%    0.4%  Function: *gC
+    269    0.1%    0.3%  Function: *de
+    245    0.1%    0.3%  LazyCompile: *pop /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:1239:13
+    244    0.1%    0.3%  LazyCompile: *push /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:1264:14
+    239    0.1%    0.3%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    220    0.1%    0.3%  LazyCompile: *isValidElementType /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:1418:28
+    206    0.1%    0.3%  LazyCompile: *widestLine /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/widest-line/index.js:4:20
+    199    0.1%    0.3%  LazyCompile: *warnOnInvalidKey /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:4974:28
+    197    0.1%    0.3%  LazyCompile: *App /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:17:13
+    188    0.1%    0.2%  LazyCompile: *placeSingleChild /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:4736:28
+    176    0.1%    0.2%  RegExp: \d[^m]*
+    175    0.1%    0.2%  RegExp: ^[�-�][�-�]$ {2}
+    159    0.1%    0.2%  LazyCompile: *validateExplicitKey /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2026:29
+    125    0.1%    0.2%  Function: *Od
+    123    0.1%    0.2%  LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    114    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {1}
+    108    0.0%    0.1%  LazyCompile: *updateReducer /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6646:23
+    106    0.0%    0.1%  Function: *af
+    104    0.0%    0.1%  LazyCompile: *prepareFreshStack /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15042:27
+    100    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {23}
+     95    0.0%    0.1%  LazyCompile: *commitRootImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15555:24
+     93    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {11}
+     86    0.0%    0.1%  LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+     85    0.0%    0.1%  LazyCompile: *pushHostRootContext /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8952:29
+     85    0.0%    0.1%  LazyCompile: *cloneChildFibers /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:5566:26
+     82    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {3}
+     82    0.0%    0.1%  LazyCompile: *updateEffect /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7166:22
+     79    0.0%    0.1%  Stub: js_to_wasm:iii:d
+     78    0.0%    0.1%  LazyCompile: *squashTextNodes /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/squash-text-nodes.js:9:25
+     77    0.0%    0.1%  Function: *Ld
+     76    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {5}
+     76    0.0%    0.1%  LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+     75    0.0%    0.1%  LazyCompile: *commitLifeCycles /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12534:26
+     73    0.0%    0.1%  Function: *Yd
+     67    0.0%    0.1%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+     66    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {17}
+     66    0.0%    0.1%  LazyCompile: *useInput /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/hooks/use-input.js:32:18
+     65    0.0%    0.1%  RegExp: ukraine
+     65    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {13}
+     64    0.0%    0.1%  LazyCompile: *updateEffectImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7132:26
+     63    0.0%    0.1%  LazyCompile: *commitHookEffectListUnmount /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12449:37
+     63    0.0%    0.1%  LazyCompile: *builder /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/chalk/source/index.js:139:18
+     62    0.0%    0.1%  LazyCompile: *coerceRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:4522:19
+     62    0.0%    0.1%  Function: *Tb
+     60    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {4}
+     60    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {21}
+     56    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {31}
+     56    0.0%    0.1%  LazyCompile: *TextInput /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink-text-input/build/index.js:8:19
+     55    0.0%    0.1%  LazyCompile: *useState /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7862:24
+     55    0.0%    0.1%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/hooks/use-input.js:43:23
+     54    0.0%    0.1%  Stub: js_to_wasm:iiii:d
+     54    0.0%    0.1%  LazyCompile: *pushPointer /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1268:57
+     53    0.0%    0.1%  LazyCompile: *deleteRemainingChildren /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:4661:35
+     52    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {20}
+     52    0.0%    0.1%  LazyCompile: *pushProvider /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:3030:22
+     52    0.0%    0.1%  Function: *Sb
+     52    0.0%    0.1%  Function: *Rm
+     49    0.0%    0.1%  LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/get-max-width.js:7:19
+     48    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {15}
+     47    0.0%    0.1%  LazyCompile: *popProvider /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:3057:21
+     46    0.0%    0.1%  LazyCompile: *readableAddChunk _stream_readable.js:222:26
+     45    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {7}
+     45    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {32}
+     45    0.0%    0.1%  LazyCompile: *defineKeyPropWarningGetter /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:578:36
+     45    0.0%    0.1%  Function: *dC
+     44    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {33}
+     44    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {14}
+     43    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {25}
+     43    0.0%    0.1%  LazyCompile: *schedulePassiveEffects /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12511:32
+     43    0.0%    0.1%  Function: *vg
+     42    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {9}
+     42    0.0%    0.1%  RegExp: \uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62(?:\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67|\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74|\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73)\uDB40\uDC7F|\uD83D\uDC68(?:\uD83C\uDFFC\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68\uD83C\uDFFB|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFF\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB-\uDFFE])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFE\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB-\uDFFD])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFD\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB\uDFFC])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D)?\uD83D\uDC68|(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D[\uDC66\uDC67])|[\u2695\u2696\u2708]\uFE0F|\uD83D[\uDC66\uDC67]|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|(?:\uD83C\uDFFB\u200D[\u2695\u2696\u2708]|\uD83C\uDFFF\u200D[\u2695\u2696\u2708]|\uD83C\uDFFE\u200D[\u2695\u2696\u2708]|\uD83C\uDFFD\u200D[\u2695\u2696\u2708]|\uD83C\uDFFC\u200D[\u2695\u2696\u2708])\uFE0F|\uD83C\uDFFB\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C[\uDFFB-\uDFFF])|(?:\uD83E\uDDD1\uD83C\uDFFB\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFC\u200D\uD83E\uDD1D\u200D\uD83D\uDC69)\uD83C\uDFFB|\uD83E\uDDD1(?:\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1(?:\uD83C[\uDFFB-\uDFFF])|\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1)|(?:\uD83E\uDDD1\uD83C\uDFFE\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D(?:\uD83D[\uDC68\uDC69]))(?:\uD83C[\uDFFB-\uDFFE])|(?:\uD83E\uDDD1\uD83C\uDFFC\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFD\u200D\uD83E\uDD1D\u200D\uD83D\uDC69)(?:\uD83C[\uDFFB\uDFFC])|\uD83D\uDC69(?:\uD83C\uDFFE\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB-\uDFFD\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFC\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB\uDFFD-\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFB\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFC-\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFD\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D(?:\uD83D[\uDC68\uDC69])|\uD83D[\uDC68\uDC69])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFF\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD]))|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|(?:\uD83E\uDDD1\uD83C\uDFFD\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFE\u200D\uD83E\uDD1D\u200D\uD83D\uDC69)(?:\uD83C[\uDFFB-\uDFFD])|\uD83D\uDC69\u200D\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D[\uDC66\uDC67])|(?:\uD83D\uDC41\uFE0F\u200D\uD83D\uDDE8|\uD83D\uDC69(?:\uD83C\uDFFF\u200D[\u2695\u2696\u2708]|\uD83C\uDFFE\u200D[\u2695\u2696\u2708]|\uD83C\uDFFC\u200D[\u2695\u2696\u2708]|\uD83C\uDFFB\u200D[\u2695\u2696\u2708]|\uD83C\uDFFD\u200D[\u2695\u2696\u2708]|\u200D[\u2695\u2696\u2708])|(?:(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)\uFE0F|\uD83D\uDC6F|\uD83E[\uDD3C\uDDDE\uDDDF])\u200D[\u2640\u2642]|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDB8\uDDB9\uDDCD-\uDDCF\uDDD6-\uDDDD])(?:(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|\u200D[\u2640\u2642])|\uD83C\uDFF4\u200D\u2620)\uFE0F|\uD83D\uDC69\u200D\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|\uD83C\uDFF3\uFE0F\u200D\uD83C\uDF08|\uD83D\uDC15\u200D\uD83E\uDDBA|\uD83D\uDC69\u200D\uD83D\uDC66|\uD83D\uDC69\u200D\uD83D\uDC67|\uD83C\uDDFD\uD83C\uDDF0|\uD83C\uDDF4\uD83C\uDDF2|\uD83C\uDDF6\uD83C\uDDE6|[#\*0-9]\uFE0F\u20E3|\uD83C\uDDE7(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEF\uDDF1-\uDDF4\uDDF6-\uDDF9\uDDFB\uDDFC\uDDFE\uDDFF])|\uD83C\uDDF9(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDED\uDDEF-\uDDF4\uDDF7\uDDF9\uDDFB\uDDFC\uDDFF])|\uD83C\uDDEA(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDED\uDDF7-\uDDFA])|\uD83E\uDDD1(?:\uD83C[\uDFFB-\uDFFF])|\uD83C\uDDF7(?:\uD83C[\uDDEA\uDDF4\uDDF8\uDDFA\uDDFC])|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])|\uD83C\uDDF2(?:\uD83C[\uDDE6\uDDE8-\uDDED\uDDF0-\uDDFF])|\uD83C\uDDE6(?:\uD83C[\uDDE8-\uDDEC\uDDEE\uDDF1\uDDF2\uDDF4\uDDF6-\uDDFA\uDDFC\uDDFD\uDDFF])|\uD83C\uDDF0(?:\uD83C[\uDDEA\uDDEC-\uDDEE\uDDF2\uDDF3\uDDF5\uDDF7\uDDFC\uDDFE\uDDFF])|\uD83C\uDDED(?:\uD83C[\uDDF0\uDDF2\uDDF3\uDDF7\uDDF9\uDDFA])|\uD83C\uDDE9(?:\uD83C[\uDDEA\uDDEC\uDDEF\uDDF0\uDDF2\uDDF4\uDDFF])|\uD83C\uDDFE(?:\uD83C[\uDDEA\uDDF9])|\uD83C\uDDEC(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEE\uDDF1-\uDDF3\uDDF5-\uDDFA\uDDFC\uDDFE])|\uD83C\uDDF8(?:\uD83C[\uDDE6-\uDDEA\uDDEC-\uDDF4\uDDF7-\uDDF9\uDDFB\uDDFD-\uDDFF])|\uD83C\uDDEB(?:\uD83C[\uDDEE-\uDDF0\uDDF2\uDDF4\uDDF7])|\uD83C\uDDF5(?:\uD83C[\uDDE6\uDDEA-\uDDED\uDDF0-\uDDF3\uDDF7-\uDDF9\uDDFC\uDDFE])|\uD83C\uDDFB(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDEE\uDDF3\uDDFA])|\uD83C\uDDF3(?:\uD83C[\uDDE6\uDDE8\uDDEA-\uDDEC\uDDEE\uDDF1\uDDF4\uDDF5\uDDF7\uDDFA\uDDFF])|\uD83C\uDDE8(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDEE\uDDF0-\uDDF5\uDDF7\uDDFA-\uDDFF])|\uD83C\uDDF1(?:\uD83C[\uDDE6-\uDDE8\uDDEE\uDDF0\uDDF7-\uDDFB\uDDFE])|\uD83C\uDDFF(?:\uD83C[\uDDE6\uDDF2\uDDFC])|\uD83C\uDDFC(?:\uD83C[\uDDEB\uDDF8])|\uD83C\uDDFA(?:\uD83C[\uDDE6\uDDEC\uDDF2\uDDF3\uDDF8\uDDFE\uDDFF])|\uD83C\uDDEE(?:\uD83C[\uDDE8-\uDDEA\uDDF1-\uDDF4\uDDF6-\uDDF9])|\uD83C\uDDEF(?:\uD83C[\uDDEA\uDDF2\uDDF4\uDDF5])|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDB8\uDDB9\uDDCD-\uDDCF\uDDD6-\uDDDD])(?:\uD83C[\uDFFB-\uDFFF])|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u261D\u270A-\u270D]|\uD83C[\uDF85\uDFC2\uDFC7]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66\uDC67\uDC6B-\uDC6D\uDC70\uDC72\uDC74-\uDC76\uDC78\uDC7C\uDC83\uDC85\uDCAA\uDD74\uDD7A\uDD90\uDD95\uDD96\uDE4C\uDE4F\uDEC0\uDECC]|\uD83E[\uDD0F\uDD18-\uDD1C\uDD1E\uDD1F\uDD30-\uDD36\uDDB5\uDDB6\uDDBB\uDDD2-\uDDD5])(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u231A\u231B\u23E9-\u23EC\u23F0\u23F3\u25FD\u25FE\u2614\u2615\u2648-\u2653\u267F\u2693\u26A1\u26AA\u26AB\u26BD\u26BE\u26C4\u26C5\u26CE\u26D4\u26EA\u26F2\u26F3\u26F5\u26FA\u26FD\u2705\u270A\u270B\u2728\u274C\u274E\u2753-\u2755\u2757\u2795-\u2797\u27B0\u27BF\u2B1B\u2B1C\u2B50\u2B55]|\uD83C[\uDC04\uDCCF\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE1A\uDE2F\uDE32-\uDE36\uDE38-\uDE3A\uDE50\uDE51\uDF00-\uDF20\uDF2D-\uDF35\uDF37-\uDF7C\uDF7E-\uDF93\uDFA0-\uDFCA\uDFCF-\uDFD3\uDFE0-\uDFF0\uDFF4\uDFF8-\uDFFF]|\uD83D[\uDC00-\uDC3E\uDC40\uDC42-\uDCFC\uDCFF-\uDD3D\uDD4B-\uDD4E\uDD50-\uDD67\uDD7A\uDD95\uDD96\uDDA4\uDDFB-\uDE4F\uDE80-\uDEC5\uDECC\uDED0-\uDED2\uDED5\uDEEB\uDEEC\uDEF4-\uDEFA\uDFE0-\uDFEB]|\uD83E[\uDD0D-\uDD3A\uDD3C-\uDD45\uDD47-\uDD71\uDD73-\uDD76\uDD7A-\uDDA2\uDDA5-\uDDAA\uDDAE-\uDDCA\uDDCD-\uDDFF\uDE70-\uDE73\uDE78-\uDE7A\uDE80-\uDE82\uDE90-\uDE95])|(?:[#\*0-9\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u23CF\u23E9-\u23F3\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB-\u25FE\u2600-\u2604\u260E\u2611\u2614\u2615\u2618\u261D\u2620\u2622\u2623\u2626\u262A\u262E\u262F\u2638-\u263A\u2640\u2642\u2648-\u2653\u265F\u2660\u2663\u2665\u2666\u2668\u267B\u267E\u267F\u2692-\u2697\u2699\u269B\u269C\u26A0\u26A1\u26AA\u26AB\u26B0\u26B1\u26BD\u26BE\u26C4\u26C5\u26C8\u26CE\u26CF\u26D1\u26D3\u26D4\u26E9\u26EA\u26F0-\u26F5\u26F7-\u26FA\u26FD\u2702\u2705\u2708-\u270D\u270F\u2712\u2714\u2716\u271D\u2721\u2728\u2733\u2734\u2744\u2747\u274C\u274E\u2753-\u2755\u2757\u2763\u2764\u2795-\u2797\u27A1\u27B0\u27BF\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B50\u2B55\u3030\u303D\u3297\u3299]|\uD83C[\uDC04\uDCCF\uDD70\uDD71\uDD7E\uDD7F\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE02\uDE1A\uDE2F\uDE32-\uDE3A\uDE50\uDE51\uDF00-\uDF21\uDF24-\uDF93\uDF96\uDF97\uDF99-\uDF9B\uDF9E-\uDFF0\uDFF3-\uDFF5\uDFF7-\uDFFF]|\uD83D[\uDC00-\uDCFD\uDCFF-\uDD3D\uDD49-\uDD4E\uDD50-\uDD67\uDD6F\uDD70\uDD73-\uDD7A\uDD87\uDD8A-\uDD8D\uDD90\uDD95\uDD96\uDDA4\uDDA5\uDDA8\uDDB1\uDDB2\uDDBC\uDDC2-\uDDC4\uDDD1-\uDDD3\uDDDC-\uDDDE\uDDE1\uDDE3\uDDE8\uDDEF\uDDF3\uDDFA-\uDE4F\uDE80-\uDEC5\uDECB-\uDED2\uDED5\uDEE0-\uDEE5\uDEE9\uDEEB\uDEEC\uDEF0\uDEF3-\uDEFA\uDFE0-\uDFEB]|\uD83E[\uDD0D-\uDD3A\uDD3C-\uDD45\uDD47-\uDD71\uDD73-\uDD76\uDD7A-\uDDA2\uDDA5-\uDDAA\uDDAE-\uDDCA\uDDCD-\uDDFF\uDE70-\uDE73\uDE78-\uDE7A\uDE80-\uDE82\uDE90-\uDE95])\uFE0F|(?:[\u261D\u26F9\u270A-\u270D]|\uD83C[\uDF85\uDFC2-\uDFC4\uDFC7\uDFCA-\uDFCC]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66-\uDC78\uDC7C\uDC81-\uDC83\uDC85-\uDC87\uDC8F\uDC91\uDCAA\uDD74\uDD75\uDD7A\uDD90\uDD95\uDD96\uDE45-\uDE47\uDE4B-\uDE4F\uDEA3\uDEB4-\uDEB6\uDEC0\uDECC]|\uD83E[\uDD0F\uDD18-\uDD1F\uDD26\uDD30-\uDD39\uDD3C-\uDD3E\uDDB5\uDDB6\uDDB8\uDDB9\uDDBB\uDDCD-\uDDCF\uDDD1-\uDDDD])
+     42    0.0%    0.1%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/hooks/use-input.js:92:16
+     42    0.0%    0.1%  Function: *hC
+     41    0.0%    0.1%  LazyCompile: *updateWorkInProgressHook /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6552:34
+     39    0.0%    0.1%  RegExp: ^[�-�][�-�]$ {27}
+     38    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {29}
+     38    0.0%    0.0%  LazyCompile: *ensureRootIsScheduled /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14504:31
+     38    0.0%    0.0%  Function: *be
+     38    0.0%    0.0%  Function: *Oc
+     37    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {8}
+     37    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {6}
+     37    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {24}
+     37    0.0%    0.0%  LazyCompile: *popHostContainer /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:5639:26
+     37    0.0%    0.0%  LazyCompile: *Readable.read _stream_readable.js:379:35
+     36    0.0%    0.0%  Function: *ym
+     36    0.0%    0.0%  Function: *Am
+     35    0.0%    0.0%  LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+     35    0.0%    0.0%  Function: *Td
+     35    0.0%    0.0%  Function: *Jd
+     34    0.0%    0.0%  LazyCompile: *scheduleSyncCallback /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2501:30
+     34    0.0%    0.0%  LazyCompile: *_flushCallback /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:49:33
+     33    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {22}
+     33    0.0%    0.0%  LazyCompile: *readContext /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:3216:21
+     33    0.0%    0.0%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     33    0.0%    0.0%  LazyCompile: *dispatchAction /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7482:24
+     32    0.0%    0.0%  Stub: js_to_wasm:iiiid:
+     32    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {12}
+     32    0.0%    0.0%  LazyCompile: *commitTextUpdate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:188:23
+     31    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {19}
+     31    0.0%    0.0%  LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+     31    0.0%    0.0%  Function: *cC
+     30    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {28}
+     30    0.0%    0.0%  LazyCompile: *socketOnData _http_client.js:468:22
+     30    0.0%    0.0%  Function: *si
+     30    0.0%    0.0%  Function: *Bd
+     29    0.0%    0.0%  LazyCompile: *nextTick internal/process/task_queues.js:105:18
+     28    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {16}
+     28    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1478:29
+     28    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+     27    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {30}
+     27    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {18}
+     27    0.0%    0.0%  Function: *Dm
+     26    0.0%    0.0%  LazyCompile: *push /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:204:14
+     26    0.0%    0.0%  LazyCompile: *markUpdateLaneFromFiberToRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14454:39
+     26    0.0%    0.0%  Function: *me
+     25    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {10}
+     25    0.0%    0.0%  LazyCompile: *ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2807:74
+     25    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:117:28
+     24    0.0%    0.0%  LazyCompile: *useStdin /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/hooks/use-stdin.js:11:18
+     24    0.0%    0.0%  Function: *ne
+     23    0.0%    0.0%  Stub: js_to_wasm:iii:i
+     23    0.0%    0.0%  RegExp: ^[�-�][�-�]$ {26}
+     23    0.0%    0.0%  LazyCompile: *invokeGuardedCallbackProd /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12097:35
+     23    0.0%    0.0%  LazyCompile: *commitHookEffectListMount /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12473:35
+     23    0.0%    0.0%  LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+     22    0.0%    0.0%  RegExp: ukraine {1}
+     22    0.0%    0.0%  LazyCompile: *updateHookTypesDev /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6275:28
+     22    0.0%    0.0%  LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+     21    0.0%    0.0%  LazyCompile: *applyStyle /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/chalk/source/index.js:161:20
+     21    0.0%    0.0%  Function: *Tm
+     20    0.0%    0.0%  LazyCompile: *parserOnBody _http_common.js:125:22
+     20    0.0%    0.0%  LazyCompile: *onStreamRead internal/stream_base_commons.js:165:22
+     20    0.0%    0.0%  LazyCompile: *isContextProvider /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:1363:27
+     20    0.0%    0.0%  LazyCompile: *_emit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/eventsource/lib/eventsource.js:276:18
+     20    0.0%    0.0%  Function: *zm
+     20    0.0%    0.0%  Function: *Id
+     19    0.0%    0.0%  LazyCompile: *markStarvedLanesAsExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2044:35
+     19    0.0%    0.0%  Function: *ac
+     18    0.0%    0.0%  LazyCompile: *warnAboutRenderPhaseUpdatesInDEV /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16553:42
+     18    0.0%    0.0%  LazyCompile: *transform /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Text.js:16:23
+     18    0.0%    0.0%  LazyCompile: *resolveForwardRefForHotReloading /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16998:42
+     18    0.0%    0.0%  LazyCompile: *pushDispatcher /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15142:24
+     18    0.0%    0.0%  LazyCompile: *popTopLevelContextObject /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:1377:34
+     18    0.0%    0.0%  LazyCompile: *applyMarginStyles /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/styles.js:15:27
+     17    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {22}
+     17    0.0%    0.0%  LazyCompile: *unstable_runWithPriority /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:451:34
+     17    0.0%    0.0%  LazyCompile: *processTimers internal/timers.js:482:25
+     17    0.0%    0.0%  Function: *ZC
+     17    0.0%    0.0%  Function: *WC
+     16    0.0%    0.0%  RegExp: ^[�-�][�-�]$
+     16    0.0%    0.0%  LazyCompile: *resetWorkInProgressVersions /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6172:37
+     16    0.0%    0.0%  LazyCompile: *resetHydrationState /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6144:29
+     16    0.0%    0.0%  LazyCompile: *getCurrentPriorityLevel /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2439:33
+     16    0.0%    0.0%  LazyCompile: *flushPassiveEffects /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16007:29
+     16    0.0%    0.0%  LazyCompile: *applyFlexStyles /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/styles.js:43:25
+     16    0.0%    0.0%  LazyCompile: *FiberNode /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:17385:19
+     16    0.0%    0.0%  Function: *jo
+     16    0.0%    0.0%  Function: *ec
+     16    0.0%    0.0%  Function: *Ud
+     16    0.0%    0.0%  Function: *Sm
+     15    0.0%    0.0%  LazyCompile: *validatePropTypes /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2113:27
+     15    0.0%    0.0%  LazyCompile: *pushEffect /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7075:20
+     15    0.0%    0.0%  LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+     15    0.0%    0.0%  LazyCompile: *bailoutOnAlreadyFinishedWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10188:38
+     15    0.0%    0.0%  LazyCompile: *applyPositionStyles /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/styles.js:8:29
+     15    0.0%    0.0%  Function: *uj
+     15    0.0%    0.0%  Function: *ue
+     15    0.0%    0.0%  Function: *km
+     15    0.0%    0.0%  Function: *aD
+     14    0.0%    0.0%  LazyCompile: *areHookInputsEqual /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6338:28
+     14    0.0%    0.0%  Function: *th
+     13    0.0%    0.0%  LazyCompile: *scheduleInteractions /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16680:30
+     13    0.0%    0.0%  LazyCompile: *getNextLanes /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:1884:22
+     13    0.0%    0.0%  LazyCompile: *adjustOffset buffer.js:1086:22
+     13    0.0%    0.0%  LazyCompile: *<anonymous> :1:10
+     13    0.0%    0.0%  Function: *yC
+     13    0.0%    0.0%  Function: *uh
+     13    0.0%    0.0%  Function: *se
+     13    0.0%    0.0%  Function: *pe
+     13    0.0%    0.0%  Function: *Vo
+     13    0.0%    0.0%  Function: *TC
+     12    0.0%    0.0%  RegExp: \uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62(?:\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67|\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74|\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73)\uDB40\uDC7F|\uD83D\uDC68(?:\uD83C\uDFFC\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68\uD83C\uDFFB|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFF\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB-\uDFFE])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFE\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB-\uDFFD])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFD\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB\uDFFC])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D)?\uD83D\uDC68|(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D[\uDC66\uDC67])|[\u2695\u2696\u2708]\uFE0F|\uD83D[\uDC66\uDC67]|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|(?:\uD83C\uDFFB\u200D[\u2695\u2696\u2708]|\uD83C\uDFFF\u200D[\u2695\u2696\u2708]|\uD83C\uDFFE\u200D[\u2695\u2696\u2708]|\uD83C\uDFFD\u200D[\u2695\u2696\u2708]|\uD83C\uDFFC\u200D[\u2695\u2696\u2708])\uFE0F|\uD83C\uDFFB\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C[\uDFFB-\uDFFF])|(?:\uD83E\uDDD1\uD83C\uDFFB\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFC\u200D\uD83E\uDD1D\u200D\uD83D\uDC69)\uD83C\uDFFB|\uD83E\uDDD1(?:\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1(?:\uD83C[\uDFFB-\uDFFF])|\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1)|(?:\uD83E\uDDD1\uD83C\uDFFE\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D(?:\uD83D[\uDC68\uDC69]))(?:\uD83C[\uDFFB-\uDFFE])|(?:\uD83E\uDDD1\uD83C\uDFFC\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFD\u200D\uD83E\uDD1D\u200D\uD83D\uDC69)(?:\uD83C[\uDFFB\uDFFC])|\uD83D\uDC69(?:\uD83C\uDFFE\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB-\uDFFD\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFC\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB\uDFFD-\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFB\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFC-\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFD\u200D(?:\uD83E\uDD1D\u200D\uD83D\uDC68(?:\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D(?:\uD83D[\uDC68\uDC69])|\uD83D[\uDC68\uDC69])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C\uDFFF\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD]))|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|(?:\uD83E\uDDD1\uD83C\uDFFD\u200D\uD83E\uDD1D\u200D\uD83E\uDDD1|\uD83D\uDC69\uD83C\uDFFE\u200D\uD83E\uDD1D\u200D\uD83D\uDC69)(?:\uD83C[\uDFFB-\uDFFD])|\uD83D\uDC69\u200D\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D[\uDC66\uDC67])|(?:\uD83D\uDC41\uFE0F\u200D\uD83D\uDDE8|\uD83D\uDC69(?:\uD83C\uDFFF\u200D[\u2695\u2696\u2708]|\uD83C\uDFFE\u200D[\u2695\u2696\u2708]|\uD83C\uDFFC\u200D[\u2695\u2696\u2708]|\uD83C\uDFFB\u200D[\u2695\u2696\u2708]|\uD83C\uDFFD\u200D[\u2695\u2696\u2708]|\u200D[\u2695\u2696\u2708])|(?:(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)\uFE0F|\uD83D\uDC6F|\uD83E[\uDD3C\uDDDE\uDDDF])\u200D[\u2640\u2642]|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDB8\uDDB9\uDDCD-\uDDCF\uDDD6-\uDDDD])(?:(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|\u200D[\u2640\u2642])|\uD83C\uDFF4\u200D\u2620)\uFE0F|\uD83D\uDC69\u200D\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|\uD83C\uDFF3\uFE0F\u200D\uD83C\uDF08|\uD83D\uDC15\u200D\uD83E\uDDBA|\uD83D\uDC69\u200D\uD83D\uDC66|\uD83D\uDC69\u200D\uD83D\uDC67|\uD83C\uDDFD\uD83C\uDDF0|\uD83C\uDDF4\uD83C\uDDF2|\uD83C\uDDF6\uD83C\uDDE6|[#\*0-9]\uFE0F\u20E3|\uD83C\uDDE7(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEF\uDDF1-\uDDF4\uDDF6-\uDDF9\uDDFB\uDDFC\uDDFE\uDDFF])|\uD83C\uDDF9(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDED\uDDEF-\uDDF4\uDDF7\uDDF9\uDDFB\uDDFC\uDDFF])|\uD83C\uDDEA(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDED\uDDF7-\uDDFA])|\uD83E\uDDD1(?:\uD83C[\uDFFB-\uDFFF])|\uD83C\uDDF7(?:\uD83C[\uDDEA\uDDF4\uDDF8\uDDFA\uDDFC])|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])|\uD83C\uDDF2(?:\uD83C[\uDDE6\uDDE8-\uDDED\uDDF0-\uDDFF])|\uD83C\uDDE6(?:\uD83C[\uDDE8-\uDDEC\uDDEE\uDDF1\uDDF2\uDDF4\uDDF6-\uDDFA\uDDFC\uDDFD\uDDFF])|\uD83C\uDDF0(?:\uD83C[\uDDEA\uDDEC-\uDDEE\uDDF2\uDDF3\uDDF5\uDDF7\uDDFC\uDDFE\uDDFF])|\uD83C\uDDED(?:\uD83C[\uDDF0\uDDF2\uDDF3\uDDF7\uDDF9\uDDFA])|\uD83C\uDDE9(?:\uD83C[\uDDEA\uDDEC\uDDEF\uDDF0\uDDF2\uDDF4\uDDFF])|\uD83C\uDDFE(?:\uD83C[\uDDEA\uDDF9])|\uD83C\uDDEC(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEE\uDDF1-\uDDF3\uDDF5-\uDDFA\uDDFC\uDDFE])|\uD83C\uDDF8(?:\uD83C[\uDDE6-\uDDEA\uDDEC-\uDDF4\uDDF7-\uDDF9\uDDFB\uDDFD-\uDDFF])|\uD83C\uDDEB(?:\uD83C[\uDDEE-\uDDF0\uDDF2\uDDF4\uDDF7])|\uD83C\uDDF5(?:\uD83C[\uDDE6\uDDEA-\uDDED\uDDF0-\uDDF3\uDDF7-\uDDF9\uDDFC\uDDFE])|\uD83C\uDDFB(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDEE\uDDF3\uDDFA])|\uD83C\uDDF3(?:\uD83C[\uDDE6\uDDE8\uDDEA-\uDDEC\uDDEE\uDDF1\uDDF4\uDDF5\uDDF7\uDDFA\uDDFF])|\uD83C\uDDE8(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDEE\uDDF0-\uDDF5\uDDF7\uDDFA-\uDDFF])|\uD83C\uDDF1(?:\uD83C[\uDDE6-\uDDE8\uDDEE\uDDF0\uDDF7-\uDDFB\uDDFE])|\uD83C\uDDFF(?:\uD83C[\uDDE6\uDDF2\uDDFC])|\uD83C\uDDFC(?:\uD83C[\uDDEB\uDDF8])|\uD83C\uDDFA(?:\uD83C[\uDDE6\uDDEC\uDDF2\uDDF3\uDDF8\uDDFE\uDDFF])|\uD83C\uDDEE(?:\uD83C[\uDDE8-\uDDEA\uDDF1-\uDDF4\uDDF6-\uDDF9])|\uD83C\uDDEF(?:\uD83C[\uDDEA\uDDF2\uDDF4\uDDF5])|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDB8\uDDB9\uDDCD-\uDDCF\uDDD6-\uDDDD])(?:\uD83C[\uDFFB-\uDFFF])|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u261D\u270A-\u270D]|\uD83C[\uDF85\uDFC2\uDFC7]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66\uDC67\uDC6B-\uDC6D\uDC70\uDC72\uDC74-\uDC76\uDC78\uDC7C\uDC83\uDC85\uDCAA\uDD74\uDD7A\uDD90\uDD95\uDD96\uDE4C\uDE4F\uDEC0\uDECC]|\uD83E[\uDD0F\uDD18-\uDD1C\uDD1E\uDD1F\uDD30-\uDD36\uDDB5\uDDB6\uDDBB\uDDD2-\uDDD5])(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u231A\u231B\u23E9-\u23EC\u23F0\u23F3\u25FD\u25FE\u2614\u2615\u2648-\u2653\u267F\u2693\u26A1\u26AA\u26AB\u26BD\u26BE\u26C4\u26C5\u26CE\u26D4\u26EA\u26F2\u26F3\u26F5\u26FA\u26FD\u2705\u270A\u270B\u2728\u274C\u274E\u2753-\u2755\u2757\u2795-\u2797\u27B0\u27BF\u2B1B\u2B1C\u2B50\u2B55]|\uD83C[\uDC04\uDCCF\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE1A\uDE2F\uDE32-\uDE36\uDE38-\uDE3A\uDE50\uDE51\uDF00-\uDF20\uDF2D-\uDF35\uDF37-\uDF7C\uDF7E-\uDF93\uDFA0-\uDFCA\uDFCF-\uDFD3\uDFE0-\uDFF0\uDFF4\uDFF8-\uDFFF]|\uD83D[\uDC00-\uDC3E\uDC40\uDC42-\uDCFC\uDCFF-\uDD3D\uDD4B-\uDD4E\uDD50-\uDD67\uDD7A\uDD95\uDD96\uDDA4\uDDFB-\uDE4F\uDE80-\uDEC5\uDECC\uDED0-\uDED2\uDED5\uDEEB\uDEEC\uDEF4-\uDEFA\uDFE0-\uDFEB]|\uD83E[\uDD0D-\uDD3A\uDD3C-\uDD45\uDD47-\uDD71\uDD73-\uDD76\uDD7A-\uDDA2\uDDA5-\uDDAA\uDDAE-\uDDCA\uDDCD-\uDDFF\uDE70-\uDE73\uDE78-\uDE7A\uDE80-\uDE82\uDE90-\uDE95])|(?:[#\*0-9\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u23CF\u23E9-\u23F3\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB-\u25FE\u2600-\u2604\u260E\u2611\u2614\u2615\u2618\u261D\u2620\u2622\u2623\u2626\u262A\u262E\u262F\u2638-\u263A\u2640\u2642\u2648-\u2653\u265F\u2660\u2663\u2665\u2666\u2668\u267B\u267E\u267F\u2692-\u2697\u2699\u269B\u269C\u26A0\u26A1\u26AA\u26AB\u26B0\u26B1\u26BD\u26BE\u26C4\u26C5\u26C8\u26CE\u26CF\u26D1\u26D3\u26D4\u26E9\u26EA\u26F0-\u26F5\u26F7-\u26FA\u26FD\u2702\u2705\u2708-\u270D\u270F\u2712\u2714\u2716\u271D\u2721\u2728\u2733\u2734\u2744\u2747\u274C\u274E\u2753-\u2755\u2757\u2763\u2764\u2795-\u2797\u27A1\u27B0\u27BF\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B50\u2B55\u3030\u303D\u3297\u3299]|\uD83C[\uDC04\uDCCF\uDD70\uDD71\uDD7E\uDD7F\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE02\uDE1A\uDE2F\uDE32-\uDE3A\uDE50\uDE51\uDF00-\uDF21\uDF24-\uDF93\uDF96\uDF97\uDF99-\uDF9B\uDF9E-\uDFF0\uDFF3-\uDFF5\uDFF7-\uDFFF]|\uD83D[\uDC00-\uDCFD\uDCFF-\uDD3D\uDD49-\uDD4E\uDD50-\uDD67\uDD6F\uDD70\uDD73-\uDD7A\uDD87\uDD8A-\uDD8D\uDD90\uDD95\uDD96\uDDA4\uDDA5\uDDA8\uDDB1\uDDB2\uDDBC\uDDC2-\uDDC4\uDDD1-\uDDD3\uDDDC-\uDDDE\uDDE1\uDDE3\uDDE8\uDDEF\uDDF3\uDDFA-\uDE4F\uDE80-\uDEC5\uDECB-\uDED2\uDED5\uDEE0-\uDEE5\uDEE9\uDEEB\uDEEC\uDEF0\uDEF3-\uDEFA\uDFE0-\uDFEB]|\uD83E[\uDD0D-\uDD3A\uDD3C-\uDD45\uDD47-\uDD71\uDD73-\uDD76\uDD7A-\uDDA2\uDDA5-\uDDAA\uDDAE-\uDDCA\uDDCD-\uDDFF\uDE70-\uDE73\uDE78-\uDE7A\uDE80-\uDE82\uDE90-\uDE95])\uFE0F|(?:[\u261D\u26F9\u270A-\u270D]|\uD83C[\uDF85\uDFC2-\uDFC4\uDFC7\uDFCA-\uDFCC]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66-\uDC78\uDC7C\uDC81-\uDC83\uDC85-\uDC87\uDC8F\uDC91\uDCAA\uDD74\uDD75\uDD7A\uDD90\uDD95\uDD96\uDE45-\uDE47\uDE4B-\uDE4F\uDEA3\uDEB4-\uDEB6\uDEC0\uDECC]|\uD83E[\uDD0F\uDD18-\uDD1F\uDD26\uDD30-\uDD39\uDD3C-\uDD3E\uDDB5\uDDB6\uDDB8\uDDB9\uDDBB\uDDCD-\uDDCF\uDDD1-\uDDDD]) {1}
+     12    0.0%    0.0%  LazyCompile: *markWorkInProgressReceivedUpdate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10184:42
+     12    0.0%    0.0%  LazyCompile: *isSubsetOfLanes /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2256:25
+     12    0.0%    0.0%  LazyCompile: *invokePassiveEffectCreate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16052:35
+     12    0.0%    0.0%  LazyCompile: *get internal/url.js:465:8
+     12    0.0%    0.0%  Function: *te
+     12    0.0%    0.0%  Function: *gg
+     11    0.0%    0.0%  LazyCompile: *startWorkOnPendingInteractions /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16717:40
+     11    0.0%    0.0%  LazyCompile: *siftDown /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:249:18
+     11    0.0%    0.0%  LazyCompile: *resolveClassForHotReloading /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16994:37
+     11    0.0%    0.0%  LazyCompile: *pushValue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1342:123
+     11    0.0%    0.0%  Function: *ph
+     11    0.0%    0.0%  Function: *lo
+     11    0.0%    0.0%  Function: *Xo
+     11    0.0%    0.0%  Function: *Ho
+     10    0.0%    0.0%  LazyCompile: *shouldInvoke /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10424:28
+     10    0.0%    0.0%  LazyCompile: *processPromiseRejections internal/process/promises.js:171:34
+     10    0.0%    0.0%  LazyCompile: *onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+     10    0.0%    0.0%  LazyCompile: *invokeGuardedCallback /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12289:31
+     10    0.0%    0.0%  LazyCompile: *hasBom /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/eventsource/lib/eventsource.js:21:17
+     10    0.0%    0.0%  LazyCompile: *finishPendingInteractions /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16755:35
+     10    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/dist/entry-common.js:145:48
+     10    0.0%    0.0%  Function: *ve
+     10    0.0%    0.0%  Function: *tj
+     10    0.0%    0.0%  Function: *nh
+     10    0.0%    0.0%  Function: *ch
+     10    0.0%    0.0%  Function: *OC
+     10    0.0%    0.0%  Function: *Me
+      9    0.0%    0.0%  Stub: js_to_wasm:iii:
+      9    0.0%    0.0%  LazyCompile: *markRootUpdated /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2285:25
+      9    0.0%    0.0%  LazyCompile: *URL internal/url.js:325:14
+      9    0.0%    0.0%  Function: *vj
+      8    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {7}
+      8    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {5}
+      8    0.0%    0.0%  LazyCompile: *useFiber /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:4699:20
+      8    0.0%    0.0%  LazyCompile: *updateHostContainer /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10669:34
+      8    0.0%    0.0%  LazyCompile: *requestUpdateLane /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14280:27
+      8    0.0%    0.0%  LazyCompile: *leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+      8    0.0%    0.0%  LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+      8    0.0%    0.0%  LazyCompile: *insert internal/priority_queue.js:34:9
+      8    0.0%    0.0%  Function: *oe
+      8    0.0%    0.0%  Function: *lh
+      8    0.0%    0.0%  Function: *ko
+      8    0.0%    0.0%  Function: *dd
+      8    0.0%    0.0%  Function: *ae
+      8    0.0%    0.0%  Function: *He
+      8    0.0%    0.0%  Function: *Ae
+      7    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {1}
+      7    0.0%    0.0%  LazyCompile: *workLoop /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:399:18
+      7    0.0%    0.0%  LazyCompile: *getHighestPriorityLanes /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:1730:33
+      7    0.0%    0.0%  LazyCompile: *exports.unstable_now /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:35:35
+      7    0.0%    0.0%  LazyCompile: *checkForNestedUpdates /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16363:31
+      7    0.0%    0.0%  LazyCompile: *append internal/linkedlist.js:29:16
+      7    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1042:26
+      7    0.0%    0.0%  Function: *Wn
+      7    0.0%    0.0%  Function: *Te
+      7    0.0%    0.0%  Function: *Pd
+      7    0.0%    0.0%  Function: *Ke
+      6    0.0%    0.0%  Stub: js_to_wasm:iiiddi:
+      6    0.0%    0.0%  LazyCompile: *parseUser /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:63:32
+      6    0.0%    0.0%  LazyCompile: *basicStateReducer /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6620:27
+      6    0.0%    0.0%  Function: *lc
+      6    0.0%    0.0%  Function: *aj
+      6    0.0%    0.0%  Function: *Wo
+      6    0.0%    0.0%  Function: *Ie
+      6    0.0%    0.0%  Function: *Fd
+      5    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {6}
+      5    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~]))
+      5    0.0%    0.0%  LazyCompile: *requestHostCallback /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:65:34
+      5    0.0%    0.0%  LazyCompile: *pushInteractions /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15160:26
+      5    0.0%    0.0%  LazyCompile: *onParseComplete internal/url.js:237:25
+      5    0.0%    0.0%  LazyCompile: *markUpdate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10621:20
+      5    0.0%    0.0%  LazyCompile: *emit events.js:262:44
+      5    0.0%    0.0%  LazyCompile: *debounced /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10468:25
+      5    0.0%    0.0%  Function: *xy
+      5    0.0%    0.0%  Function: *qj
+      5    0.0%    0.0%  Function: *ih
+      5    0.0%    0.0%  Function: *XC
+      5    0.0%    0.0%  Function: *Np
+      5    0.0%    0.0%  Function: *$p
+      5    0.0%    0.0%  Function: *$e
+      5    0.0%    0.0%  Function: *$b
+      4    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {30}
+      4    0.0%    0.0%  LazyCompile: *stringWidth /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/string-width/index.js:6:21
+      4    0.0%    0.0%  LazyCompile: *render /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/log-update.js:12:20
+      4    0.0%    0.0%  LazyCompile: *findClosestYogaNode /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/dom.js:115:29
+      4    0.0%    0.0%  LazyCompile: *copy buffer.js:764:16
+      4    0.0%    0.0%  LazyCompile: *compare /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:280:17
+      4    0.0%    0.0%  LazyCompile: *bailoutHooks /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:6483:22
+      4    0.0%    0.0%  Function: *wj
+      4    0.0%    0.0%  Function: *bq
+      4    0.0%    0.0%  Function: *Le
+      4    0.0%    0.0%  Function: *$d
+      3    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {3}
+      3    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {34}
+      3    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {18}
+      3    0.0%    0.0%  LazyCompile: *updateHostText /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:9063:24
+      3    0.0%    0.0%  LazyCompile: *percolateDown internal/priority_queue.js:49:16
+      3    0.0%    0.0%  LazyCompile: *measureTextNode /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/dom.js:98:34
+      3    0.0%    0.0%  LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/colorize.js:15:19
+      3    0.0%    0.0%  LazyCompile: *advanceTimers /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:321:23
+      3    0.0%    0.0%  LazyCompile: *URLSearchParams internal/url.js:141:14
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/dist/entry-common.js:220:43
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1481:29
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1475:29
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1472:29
+      3    0.0%    0.0%  Function: *we
+      3    0.0%    0.0%  Function: *sj
+      3    0.0%    0.0%  Function: *qc
+      3    0.0%    0.0%  Function: *nc
+      3    0.0%    0.0%  Function: *fC
+      3    0.0%    0.0%  Function: *eD
+      3    0.0%    0.0%  Function: *eC
+      3    0.0%    0.0%  Function: *_d
+      3    0.0%    0.0%  Function: *Tf
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {35}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {32}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {31}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {24}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {21}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {19}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {16}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {12}
+      2    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {10}
+      2    0.0%    0.0%  LazyCompile: *writeGeneric internal/stream_base_commons.js:143:22
+      2    0.0%    0.0%  LazyCompile: *unstable_scheduleCallback /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:516:35
+      2    0.0%    0.0%  LazyCompile: *remove internal/linkedlist.js:15:16
+      2    0.0%    0.0%  LazyCompile: *placeChild /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:4708:22
+      2    0.0%    0.0%  LazyCompile: *now /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10028:33
+      2    0.0%    0.0%  LazyCompile: *listenerCount events.js:581:23
+      2    0.0%    0.0%  LazyCompile: *hidden internal/errors.js:282:25
+      2    0.0%    0.0%  LazyCompile: *hasHooks internal/async_hooks.js:370:18
+      2    0.0%    0.0%  LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+      2    0.0%    0.0%  LazyCompile: *clearTimeout timers.js:171:22
+      2    0.0%    0.0%  Function: *ye
+      2    0.0%    0.0%  Function: *rj
+      2    0.0%    0.0%  Function: *re
+      2    0.0%    0.0%  Function: *qe
+      2    0.0%    0.0%  Function: *oj
+      2    0.0%    0.0%  Function: *fd
+      2    0.0%    0.0%  Function: *Tg
+      2    0.0%    0.0%  Function: *Pg
+      2    0.0%    0.0%  Function: *Pe
+      2    0.0%    0.0%  Function: *Ne
+      2    0.0%    0.0%  Function: *Gd
+      2    0.0%    0.0%  Function: *Fe
+      2    0.0%    0.0%  Function: *Co
+      2    0.0%    0.0%  Function: *Ce
+      2    0.0%    0.0%  Function: *Cd
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {8}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {4}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {36}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {2}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {29}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {28}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {27}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {25}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {23}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {20}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {17}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {15}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {14}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {13}
+      1    0.0%    0.0%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {11}
+      1    0.0%    0.0%  LazyCompile: *timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+      1    0.0%    0.0%  LazyCompile: *resolveDispatcher /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:1471:27
+      1    0.0%    0.0%  LazyCompile: *pop /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:213:13
+      1    0.0%    0.0%  LazyCompile: *performUnitOfWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15327:27
+      1    0.0%    0.0%  LazyCompile: *initHooksExist internal/async_hooks.js:378:24
+      1    0.0%    0.0%  LazyCompile: *getDefaultTriggerAsyncId internal/async_hooks.js:341:34
+      1    0.0%    0.0%  LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/index.js:6:73
+      1    0.0%    0.0%  LazyCompile: *commitRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15549:20
+      1    0.0%    0.0%  LazyCompile: *call /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/build/Release/nbind.js:1508:40
+      1    0.0%    0.0%  LazyCompile: *assignFiberPropertiesInDEV /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:17918:36
+      1    0.0%    0.0%  LazyCompile: *ansiEscapes.eraseLines /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ansi-escapes/index.js:60:26
+      1    0.0%    0.0%  LazyCompile: *_unrefTimer net.js:394:52
+      1    0.0%    0.0%  LazyCompile: *_copy buffer.js:204:15
+      1    0.0%    0.0%  LazyCompile: *URLContext internal/url.js:123:14
+      1    0.0%    0.0%  LazyCompile: *ReactStrictModeWarnings.discardPendingWarnings /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2962:61
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/yoga-layout-prebuilt/yoga-layout/dist/entry-common.js:228:57
+      1    0.0%    0.0%  Function: *wc
+      1    0.0%    0.0%  Function: *oo
+      1    0.0%    0.0%  Function: *kh
+      1    0.0%    0.0%  Function: *bh
+      1    0.0%    0.0%  Function: *ah
+      1    0.0%    0.0%  Function: *_o
+      1    0.0%    0.0%  Function: *_e
+      1    0.0%    0.0%  Function: *Yg
+      1    0.0%    0.0%  Function: *Xe
+      1    0.0%    0.0%  Function: *We
+      1    0.0%    0.0%  Function: *WA
+      1    0.0%    0.0%  Function: *Vg
+      1    0.0%    0.0%  Function: *Ug
+      1    0.0%    0.0%  Function: *UA
+      1    0.0%    0.0%  Function: *Sd
+      1    0.0%    0.0%  Function: *RC
+      1    0.0%    0.0%  Function: *Qd
+      1    0.0%    0.0%  Function: *Je
+      1    0.0%    0.0%  Function: *Ge
+      1    0.0%    0.0%  Function: *Do
+      1    0.0%    0.0%  Function: *De
+      1    0.0%    0.0%  Function: *Be
+
+ [C++]:
+   ticks  total  nonlib   name
+  11131    4.8%   14.5%  epoll_pwait
+   4691    2.0%    6.1%  v8::internal::CompilationCacheRegExp::Lookup(v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int>)
+   1874    0.8%    2.4%  v8::internal::String::Flatten(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::AllocationType)
+   1631    0.7%    2.1%  v8::internal::MarkingBarrier(v8::internal::HeapObject, v8::internal::FullObjectSlot, v8::internal::Object)
+    603    0.3%    0.8%  v8::internal::heap_internals::GenerationalBarrierInternal(v8::internal::HeapObject, unsigned long, v8::internal::HeapObject)
+    489    0.2%    0.6%  v8::internal::Builtin_ObjectDefineProperty(int, unsigned long*, v8::internal::Isolate*)
+    460    0.2%    0.6%  __pthread_cond_signal
+    425    0.2%    0.6%  v8::internal::CompilationCache::LookupRegExp(v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int>)
+    419    0.2%    0.5%  __libc_read
+    403    0.2%    0.5%  __pthread_cond_timedwait
+    399    0.2%    0.5%  v8::internal::ReadOnlyHeap::GetReadOnlyRoots(v8::internal::HeapObject)
+    363    0.2%    0.5%  __libc_malloc
+    340    0.1%    0.4%  v8::internal::Builtin_ObjectFreeze(int, unsigned long*, v8::internal::Isolate*)
+    221    0.1%    0.3%  __libc_write
+    144    0.1%    0.2%  node::url::(anonymous namespace)::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+    101    0.0%    0.1%  node::url::URL::Parse(char const*, unsigned long, node::url::url_parse_state, node::url::url_data*, bool, node::url::url_data const*, bool)
+     95    0.0%    0.1%  void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     83    0.0%    0.1%  v8::internal::Accessors::ArrayLengthSetter(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<v8::Boolean> const&)
+     83    0.0%    0.1%  cfree
+     80    0.0%    0.1%  v8::internal::Builtin_ObjectGetOwnPropertySymbols(int, unsigned long*, v8::internal::Isolate*)
+     77    0.0%    0.1%  __GI___pthread_mutex_lock
+     76    0.0%    0.1%  do_futex_wait.constprop.0
+     67    0.0%    0.1%  _init
+     60    0.0%    0.1%  node::(anonymous namespace)::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+     58    0.0%    0.1%  __GI___pthread_mutex_unlock
+     57    0.0%    0.1%  v8::internal::FixedArray::set(int, v8::internal::Object)
+     37    0.0%    0.0%  v8::internal::Worklist<std::pair<v8::internal::HeapObject, int>, 256>::View::Push(std::pair<v8::internal::HeapObject, int>) [clone .isra.347]
+     37    0.0%    0.0%  v8::internal::Builtin_NumberPrototypeToString(int, unsigned long*, v8::internal::Isolate*)
+     36    0.0%    0.0%  v8::internal::HandleScope::~HandleScope()
+     35    0.0%    0.0%  node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     34    0.0%    0.0%  node::url::(anonymous namespace)::AppendOrEscape(std::string*, unsigned char, unsigned char const*)
+     33    0.0%    0.0%  __lll_lock_wait
+     31    0.0%    0.0%  node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     31    0.0%    0.0%  __pthread_cond_broadcast
+     29    0.0%    0.0%  std::string::reserve(unsigned long)
+     29    0.0%    0.0%  operator new(unsigned long)
+     27    0.0%    0.0%  v8::String::WriteUtf8(v8::Isolate*, char*, int, int*, int) const
+     27    0.0%    0.0%  std::string::compare(char const*) const
+     27    0.0%    0.0%  node::InternalCallbackScope::Close()
+     27    0.0%    0.0%  __write
+     27    0.0%    0.0%  __GI___pthread_getspecific
+     25    0.0%    0.0%  void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     25    0.0%    0.0%  operator new[](unsigned long)
+     24    0.0%    0.0%  v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+     23    0.0%    0.0%  v8::Value::IsFunction() const
+     23    0.0%    0.0%  node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks)
+     21    0.0%    0.0%  __mprotect
+     20    0.0%    0.0%  node::AsyncWrap::EmitTraceEventBefore()
+     20    0.0%    0.0%  node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+     19    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+     18    0.0%    0.0%  operator delete(void*)
+     18    0.0%    0.0%  node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+     18    0.0%    0.0%  node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+     18    0.0%    0.0%  node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &node::(anonymous namespace)::Parser::on_body>::Raw(llhttp__internal_s*, char const*, unsigned long)
+     17    0.0%    0.0%  v8::internal::Builtin_JsonParse(int, unsigned long*, v8::internal::Isolate*)
+     17    0.0%    0.0%  v8::HandleScope::~HandleScope()
+     17    0.0%    0.0%  node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+     17    0.0%    0.0%  node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+     16    0.0%    0.0%  operator delete[](void*)
+     16    0.0%    0.0%  node::TLSWrap::ClearOut()
+     16    0.0%    0.0%  node::InternalCallbackScope::~InternalCallbackScope()
+     16    0.0%    0.0%  __errno_location
+     15    0.0%    0.0%  v8::HandleScope::HandleScope(v8::Isolate*)
+     15    0.0%    0.0%  node::NodePlatform::CurrentClockTimeMillis()
+     14    0.0%    0.0%  v8::EscapableHandleScope::Escape(unsigned long*)
+     14    0.0%    0.0%  v8::Context::Enter()
+     13    0.0%    0.0%  v8::MaybeLocal<v8::Value> node::ToV8Value<std::string>(v8::Local<v8::Context>, std::vector<std::string, std::allocator<std::string> > const&, v8::Isolate*)
+     13    0.0%    0.0%  v8::Context::Exit()
+     12    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<true>::CallDepthScope(v8::internal::Isolate*, v8::Local<v8::Context>)
+     12    0.0%    0.0%  std::string::_M_mutate(unsigned long, unsigned long, unsigned long)
+     12    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+     11    0.0%    0.0%  std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long)
+     11    0.0%    0.0%  node::url::(anonymous namespace)::URLHost::ParseHost(char const*, unsigned long, bool, bool) [clone .constprop.77]
+     11    0.0%    0.0%  node::EmitToJSStreamListener::OnStreamAlloc(unsigned long)
+     10    0.0%    0.0%  v8::internal::libc_memcpy(void*, void const*, unsigned long)
+     10    0.0%    0.0%  v8::internal::libc_memchr(void*, int, unsigned long)
+     10    0.0%    0.0%  v8::Object::Get(v8::Local<v8::Context>, unsigned int)
+     10    0.0%    0.0%  v8::Integer::NewFromUnsigned(v8::Isolate*, unsigned int)
+     10    0.0%    0.0%  node::crypto::NodeBIO::Read(char*, unsigned long)
+     10    0.0%    0.0%  node::NodePlatform::CallOnWorkerThread(std::unique_ptr<v8::Task, std::default_delete<v8::Task> >)
+     10    0.0%    0.0%  int v8::(anonymous namespace)::WriteUtf8Impl<unsigned char>(v8::internal::Vector<unsigned char const>, char*, int, int, int*)
+      9    0.0%    0.0%  v8::internal::Builtin_StringPrototypeNormalizeIntl(int, unsigned long*, v8::internal::Isolate*)
+      9    0.0%    0.0%  operator new[](unsigned long, std::nothrow_t const&)
+      9    0.0%    0.0%  __clock_gettime
+      8    0.0%    0.0%  v8::internal::SequentialStringKey<unsigned char>::IsMatch(v8::internal::String)
+      8    0.0%    0.0%  v8::internal::PropertyCallbackArguments::PropertyCallbackArguments(v8::internal::Isolate*, v8::internal::Object, v8::internal::Object, v8::internal::JSObject, v8::Maybe<v8::internal::ShouldThrow>)
+      8    0.0%    0.0%  v8::internal::Builtin_ArrayConcat(int, unsigned long*, v8::internal::Isolate*)
+      8    0.0%    0.0%  v8::Value::IntegerValue(v8::Local<v8::Context>) const
+      8    0.0%    0.0%  v8::EscapableHandleScope::EscapableHandleScope(v8::Isolate*)
+      8    0.0%    0.0%  v8::ArrayBuffer::New(v8::Isolate*, void*, unsigned long, v8::ArrayBufferCreationMode)
+      8    0.0%    0.0%  node::NodeArrayBufferAllocator::AllocateUninitialized(unsigned long)
+      8    0.0%    0.0%  fwrite
+      7    0.0%    0.0%  v8::internal::Builtins::builtin(int)
+      7    0.0%    0.0%  v8::String::NewFromUtf8(v8::Isolate*, char const*, v8::NewStringType, int)
+      7    0.0%    0.0%  v8::Integer::New(v8::Isolate*, int)
+      7    0.0%    0.0%  v8::Context::GetNumberOfEmbedderDataFields()
+      7    0.0%    0.0%  v8::ArrayBufferView::HasBuffer() const
+      7    0.0%    0.0%  node::crypto::NodeBIO::Read(bio_st*, char*, int)
+      7    0.0%    0.0%  node::crypto::NodeBIO::FreeEmpty()
+      7    0.0%    0.0%  node::Environment::GetNow()
+      6    0.0%    0.0%  void std::vector<std::string, std::allocator<std::string> >::emplace_back<std::string>(std::string&&)
+      6    0.0%    0.0%  v8::Array::New(v8::Isolate*, v8::Local<v8::Value>*, unsigned long)
+      6    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<false>::~CallDepthScope()
+      6    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<false>::CallDepthScope(v8::internal::Isolate*, v8::Local<v8::Context>)
+      6    0.0%    0.0%  std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)
+      6    0.0%    0.0%  non-virtual thunk to node::TLSWrap::GetAsyncWrap()
+      6    0.0%    0.0%  node::url::(anonymous namespace)::NormalizePort(std::string const&, int)
+      6    0.0%    0.0%  node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.0%  node::crypto::NodeBIO::PeekWritable(unsigned long*)
+      6    0.0%    0.0%  node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      6    0.0%    0.0%  node::Environment::RunWeakRefCleanup()
+      6    0.0%    0.0%  node::Environment::Reallocate(char*, unsigned long, unsigned long)
+      6    0.0%    0.0%  node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.0%  __libc_realloc
+      6    0.0%    0.0%  _IO_file_xsputn
+      5    0.0%    0.0%  v8::internal::StringSearch<unsigned char, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      5    0.0%    0.0%  v8::Isolate::GetCurrentContext()
+      5    0.0%    0.0%  v8::ArrayBufferView::Buffer()
+      5    0.0%    0.0%  v8::ArrayBuffer::GetContents()
+      5    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+      5    0.0%    0.0%  node::url::(anonymous namespace)::ToASCII(std::string const&, std::string*)
+      5    0.0%    0.0%  node::url::(anonymous namespace)::PercentDecode(char const*, unsigned long)
+      5    0.0%    0.0%  node::i18n::ToASCII(node::MaybeStackBuffer<char, 1024ul>*, char const*, unsigned long, node::i18n::idna_mode)
+      5    0.0%    0.0%  node::TraceEventScope::~TraceEventScope()
+      5    0.0%    0.0%  node::EmitToJSStreamListener::OnStreamRead(long, uv_buf_t const&)
+      5    0.0%    0.0%  node::Buffer::(anonymous namespace)::ParseArrayIndex(node::Environment*, v8::Local<v8::Value>, unsigned long, unsigned long*)
+      4    0.0%    0.0%  v8::internal::libc_memmove(void*, void const*, unsigned long)
+      4    0.0%    0.0%  v8::internal::Isolate::native_context()
+      4    0.0%    0.0%  v8::internal::HandleScopeImplementer::IterateThis(v8::internal::RootVisitor*)
+      4    0.0%    0.0%  v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+      4    0.0%    0.0%  v8::internal::ApiNatives::InstantiateObject(v8::internal::Isolate*, v8::internal::Handle<v8::internal::ObjectTemplateInfo>, v8::internal::Handle<v8::internal::JSReceiver>)
+      4    0.0%    0.0%  v8::Value::IsArrayBufferView() const
+      4    0.0%    0.0%  v8::V8::GlobalizeReference(v8::internal::Isolate*, unsigned long*)
+      4    0.0%    0.0%  v8::Object::InternalFieldCount()
+      4    0.0%    0.0%  v8::ArrayBufferView::ByteLength()
+      4    0.0%    0.0%  v8::Array::Length() const
+      4    0.0%    0.0%  std::string::assign(char const*, unsigned long)
+      4    0.0%    0.0%  std::string::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long)
+      4    0.0%    0.0%  sigemptyset
+      4    0.0%    0.0%  node::url::(anonymous namespace)::URLHost::ToStringMove()
+      4    0.0%    0.0%  node::url::(anonymous namespace)::SetArgs(node::Environment*, v8::Local<v8::Value>*, node::url::url_data const&)
+      4    0.0%    0.0%  node::crypto::SecureContext::AddRootCerts(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  node::crypto::NodeBIO::Ctrl(bio_st*, int, long, void*)
+      4    0.0%    0.0%  node::TLSWrap::GetAsyncWrap()
+      4    0.0%    0.0%  node::TLSWrap::ClearIn()
+      4    0.0%    0.0%  node::StringBytes::StorageSize(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      4    0.0%    0.0%  node::Environment::RunAndClearNativeImmediates(bool)
+      4    0.0%    0.0%  node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &node::(anonymous namespace)::Parser::on_chunk_header>::Raw(llhttp__internal_s*)
+      4    0.0%    0.0%  _IO_default_xsputn
+      3    0.0%    0.0%  v8::internal::(anonymous namespace)::ProbeInstantiationsCache(v8::internal::Isolate*, v8::internal::Handle<v8::internal::NativeContext>, int, v8::internal::(anonymous namespace)::CachingMode)
+      3    0.0%    0.0%  v8::Object::New(v8::Isolate*)
+      3    0.0%    0.0%  v8::Isolate::SetIdle(bool)
+      3    0.0%    0.0%  v8::Isolate::InContext()
+      3    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<true>::~CallDepthScope()
+      3    0.0%    0.0%  std::string::swap(std::string&)
+      3    0.0%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      3    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    0.0%    0.0%  std::_Hashtable<std::string, std::pair<std::string const, int>, std::allocator<std::pair<std::string const, int> >, std::__detail::_Select1st, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(std::string const&)
+      3    0.0%    0.0%  sigaddset
+      3    0.0%    0.0%  non-virtual thunk to node::TLSWrap::OnStreamRead(long, uv_buf_t const&)
+      3    0.0%    0.0%  non-virtual thunk to node::TLSWrap::OnStreamAlloc(unsigned long)
+      3    0.0%    0.0%  node::url::(anonymous namespace)::ParseHost(std::string const&, std::string*, bool, bool) [clone .constprop.76]
+      3    0.0%    0.0%  node::Utf8Value::Utf8Value(v8::Isolate*, v8::Local<v8::Value>)
+      3    0.0%    0.0%  node::TLSWrap::OnStreamAlloc(unsigned long)
+      3    0.0%    0.0%  node::LibuvStreamWrap::ReadStart()::{lambda(uv_handle_s*, unsigned long, uv_buf_t*)#1}::_FUN(uv_handle_s*, unsigned long, uv_buf_t*)
+      3    0.0%    0.0%  node::LibuvStreamWrap::Initialize(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Context>, void*)::{lambda(v8::FunctionCallbackInfo<v8::Value> const&)#1}::_FUN(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  node::Environment::CheckImmediate(uv_check_s*)
+      3    0.0%    0.0%  node::AsyncWrap::IsDoneInitializing() const
+      3    0.0%    0.0%  node::(anonymous namespace)::ScheduleTimer(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  node::(anonymous namespace)::ProcessWrap::Spawn(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  __getpid
+      2    0.0%    0.0%  v8::internal::wasm::AsmJsParser::EqualityExpression()
+      2    0.0%    0.0%  v8::internal::tracing::ScopedTracer::~ScopedTracer()
+      2    0.0%    0.0%  v8::internal::libc_memset(void*, int, unsigned long)
+      2    0.0%    0.0%  v8::internal::Scope::ResolveVariablesRecursively(v8::internal::ParseInfo*)
+      2    0.0%    0.0%  v8::internal::IsolateFromNeverReadOnlySpaceObject(unsigned long)
+      2    0.0%    0.0%  v8::internal::AsmJsScanner::Rewind()
+      2    0.0%    0.0%  v8::Value::Uint32Value(v8::Local<v8::Context>) const
+      2    0.0%    0.0%  v8::Value::ToString(v8::Local<v8::Context>) const
+      2    0.0%    0.0%  v8::String::Length() const
+      2    0.0%    0.0%  v8::MicrotasksScope::PerformCheckpoint(v8::Isolate*)
+      2    0.0%    0.0%  v8::Context::GetIsolate()
+      2    0.0%    0.0%  std::vector<v8::Global<v8::Object>, std::allocator<v8::Global<v8::Object> > >::_M_default_append(unsigned long)
+      2    0.0%    0.0%  std::locale::id::_M_id() const
+      2    0.0%    0.0%  node::errors::TryCatchScope::~TryCatchScope()
+      2    0.0%    0.0%  node::TLSWrap::OnStreamRead(long, uv_buf_t const&)
+      2    0.0%    0.0%  node::TLSWrap::EncOut()
+      2    0.0%    0.0%  node::NodePlatform::MonotonicallyIncreasingTime()
+      2    0.0%    0.0%  node::Environment::StartProfilerIdleNotifier()::{lambda(uv_check_s*)#2}::_FUN(uv_check_s*)
+      2    0.0%    0.0%  node::Environment::RunAndClearInterrupts()
+      2    0.0%    0.0%  node::Buffer::HasInstance(v8::Local<v8::Value>)
+      2    0.0%    0.0%  calloc
+      2    0.0%    0.0%  __pthread_enable_asynccancel
+      2    0.0%    0.0%  __printf_fp
+      2    0.0%    0.0%  __mmap
+      2    0.0%    0.0%  _IO_setb
+      2    0.0%    0.0%  _IO_padn
+      1    0.0%    0.0%  void std::vector<int, v8::internal::ZoneAllocator<int> >::_M_emplace_back_aux<int>(int&&)
+      1    0.0%    0.0%  v8::internal::wasm::AsmJsParser::GetVarInfo(int)
+      1    0.0%    0.0%  v8::internal::wasm::AsmJsParser::BitwiseANDExpression()
+      1    0.0%    0.0%  v8::internal::Zone::New(unsigned long)
+      1    0.0%    0.0%  v8::internal::Variable* v8::internal::Scope::Lookup<(v8::internal::Scope::ScopeLookupMode)0>(v8::internal::VariableProxy*, v8::internal::Scope*, v8::internal::Scope*, v8::internal::Scope*, bool)
+      1    0.0%    0.0%  v8::internal::SequentialStringKey<unsigned short>::IsMatch(v8::internal::String)
+      1    0.0%    0.0%  v8::internal::Scope::Scope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType)
+      1    0.0%    0.0%  v8::internal::Scope::MustAllocate(v8::internal::Variable*)
+      1    0.0%    0.0%  v8::internal::RuntimeCallTimerScope::RuntimeCallTimerScope(v8::internal::Isolate*, v8::internal::RuntimeCallCounterId)
+      1    0.0%    0.0%  v8::internal::PrototypeIterator::Advance()
+      1    0.0%    0.0%  v8::internal::HandlerTable::HandlerTable(v8::internal::BytecodeArray)
+      1    0.0%    0.0%  v8::internal::FlushInstructionCache(void*, unsigned long)
+      1    0.0%    0.0%  v8::internal::DeclarationScope::DeclarationScope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType, v8::internal::FunctionKind)
+      1    0.0%    0.0%  v8::internal::DeclarationScope::AllocateScopeInfos(v8::internal::ParseInfo*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::CompilationCache::Iterate(v8::internal::RootVisitor*)
+      1    0.0%    0.0%  v8::internal::CodeDesc::Initialize(v8::internal::CodeDesc*, v8::internal::Assembler*, int, int, int, int, int)
+      1    0.0%    0.0%  v8::internal::Builtin_DateNow(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Builtin_ArrayPop(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Builtin_ArrayBufferConstructor(int, unsigned long*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  v8::internal::AsmJsScanner::ConsumeNumber(int)
+      1    0.0%    0.0%  v8::internal::Accessors::FunctionPrototypeGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  v8::base::TemplateHashMapImpl<void*, void*, v8::base::HashEqualityThenKeyMatcher<void*, bool (*)(void*, void*)>, v8::internal::ZoneAllocationPolicy>::FillEmptyEntry(v8::base::TemplateHashMapEntry<void*, void*>*, void* const&, void* const&, unsigned int, v8::internal::ZoneAllocationPolicy)
+      1    0.0%    0.0%  v8::V8::DisposeGlobal(unsigned long*)
+      1    0.0%    0.0%  v8::TryCatch::TryCatch(v8::Isolate*)
+      1    0.0%    0.0%  v8::TryCatch::SetVerbose(bool)
+      1    0.0%    0.0%  v8::TryCatch::HasCaught() const
+      1    0.0%    0.0%  v8::Object::Set(v8::Local<v8::Context>, v8::Local<v8::Value>, v8::Local<v8::Value>)
+      1    0.0%    0.0%  v8::ArrayBufferView::ByteOffset()
+      1    0.0%    0.0%  std::string::_Rep::_M_destroy(std::allocator<char> const&)
+      1    0.0%    0.0%  std::string::_M_leak_hard()
+      1    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      1    0.0%    0.0%  std::__detail::_Map_base<std::string, std::pair<std::string const, int>, std::allocator<std::pair<std::string const, int> >, std::__detail::_Select1st, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::string const&)
+      1    0.0%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)
+      1    0.0%    0.0%  std::_Hashtable<std::string, std::pair<std::string const, int>, std::allocator<std::pair<std::string const, int> >, std::__detail::_Select1st, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::string const, int>, true>*)
+      1    0.0%    0.0%  node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::SSLWrap<node::TLSWrap>::GetPeerCertificate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding, int*)
+      1    0.0%    0.0%  node::LibuvStreamWrap::ReadStart()::{lambda(uv_stream_s*, long, uv_buf_t const*)#2}::_FUN(uv_stream_s*, long, uv_buf_t const*)
+      1    0.0%    0.0%  node::LibuvStreamWrap::IsIPCPipe()
+      1    0.0%    0.0%  node::LibuvStreamWrap::IsAlive()
+      1    0.0%    0.0%  node::Environment::StartProfilerIdleNotifier()::{lambda(uv_prepare_s*)#1}::_FUN(uv_prepare_s*)
+      1    0.0%    0.0%  node::Environment::RunTimers(uv_timer_s*)
+      1    0.0%    0.0%  node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      1    0.0%    0.0%  node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::(anonymous namespace)::SignalWrap::Start(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  brk
+      1    0.0%    0.0%  __pthread_cond_wait
+      1    0.0%    0.0%  __pthread_cond_init
+      1    0.0%    0.0%  __new_sem_wait_slow.constprop.0
+      1    0.0%    0.0%  __new_sem_wait
+      1    0.0%    0.0%  __munmap
+      1    0.0%    0.0%  __madvise
+      1    0.0%    0.0%  __GI___pthread_once
+      1    0.0%    0.0%  __GI___pthread_mutex_destroy
+      1    0.0%    0.0%  _IO_file_write
+
+ [Summary]:
+   ticks  total  nonlib   name
+  49948   21.4%   64.9%  JavaScript
+  26088   11.2%   33.9%  C++
+   4082    1.7%    5.3%  GC
+  156519   67.0%          Shared libraries
+    948    0.4%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  33440   55.1%   14.3%  v8::internal::Builtin_ObjectDefineProperty(int, unsigned long*, v8::internal::Isolate*)
+   6495   10.7%    2.8%  v8::internal::Builtin_ObjectFreeze(int, unsigned long*, v8::internal::Isolate*)
+   4691    7.7%    2.0%  v8::internal::CompilationCacheRegExp::Lookup(v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int>)
+   3741    6.2%    1.6%  node::(anonymous namespace)::Parser::Execute(v8::FunctionCallbackInfo<v8::Value> const&)
+   2794    4.6%    1.2%  v8::internal::Builtin_StringPrototypeNormalizeIntl(int, unsigned long*, v8::internal::Isolate*)
+   1874    3.1%    0.8%  v8::internal::String::Flatten(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::AllocationType)
+   1576    2.6%    0.7%  v8::internal::Builtin_ObjectGetOwnPropertySymbols(int, unsigned long*, v8::internal::Isolate*)
+   1471    2.4%    0.6%  v8::internal::MarkingBarrier(v8::internal::HeapObject, v8::internal::FullObjectSlot, v8::internal::Object)
+   1234    2.0%    0.5%  v8::internal::Builtin_JsonParse(int, unsigned long*, v8::internal::Isolate*)
+    512    0.8%    0.2%  v8::internal::heap_internals::GenerationalBarrierInternal(v8::internal::HeapObject, unsigned long, v8::internal::HeapObject)
+    425    0.7%    0.2%  v8::internal::CompilationCache::LookupRegExp(v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int>)
+    350    0.6%    0.1%  v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+    277    0.5%    0.1%  __pthread_cond_signal
+    221    0.4%    0.1%  __libc_write
+    108    0.2%    0.0%  v8::internal::Builtin_NumberPrototypeToString(int, unsigned long*, v8::internal::Isolate*)
+    101    0.2%    0.0%  node::url::URL::Parse(char const*, unsigned long, node::url::url_parse_state, node::url::url_data*, bool, node::url::url_data const*, bool)
+     99    0.2%    0.0%  v8::internal::Builtin_ArrayConcat(int, unsigned long*, v8::internal::Isolate*)
+     98    0.2%    0.0%  __libc_malloc
+     81    0.1%    0.0%  v8::internal::Accessors::ArrayLengthSetter(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<v8::Boolean> const&)
+     57    0.1%    0.0%  v8::internal::ReadOnlyHeap::GetReadOnlyRoots(v8::internal::HeapObject)
+     56    0.1%    0.0%  v8::internal::FixedArray::set(int, v8::internal::Object)
+     52    0.1%    0.0%  node::url::(anonymous namespace)::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+     41    0.1%    0.0%  _init
+     34    0.1%    0.0%  node::url::(anonymous namespace)::AppendOrEscape(std::string*, unsigned char, unsigned char const*)
+     29    0.0%    0.0%  std::string::reserve(unsigned long)
+     27    0.0%    0.0%  v8::String::WriteUtf8(v8::Isolate*, char*, int, int*, int) const
+     27    0.0%    0.0%  std::string::compare(char const*) const
+     26    0.0%    0.0%  __GI___pthread_mutex_lock
+     24    0.0%    0.0%  v8::internal::HandleScope::~HandleScope()
+     24    0.0%    0.0%  __write
+     23    0.0%    0.0%  cfree
+     22    0.0%    0.0%  void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     19    0.0%    0.0%  node::InternalCallbackScope::Close()
+     18    0.0%    0.0%  node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &node::(anonymous namespace)::Parser::on_body>::Raw(llhttp__internal_s*, char const*, unsigned long)
+     17    0.0%    0.0%  node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+     16    0.0%    0.0%  operator new(unsigned long)
+     14    0.0%    0.0%  node::NodePlatform::CurrentClockTimeMillis()
+     14    0.0%    0.0%  node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+     13    0.0%    0.0%  v8::internal::Builtin_ArrayBufferConstructor(int, unsigned long*, v8::internal::Isolate*)
+     13    0.0%    0.0%  v8::MaybeLocal<v8::Value> node::ToV8Value<std::string>(v8::Local<v8::Context>, std::vector<std::string, std::allocator<std::string> > const&, v8::Isolate*)
+     13    0.0%    0.0%  v8::HandleScope::~HandleScope()
+     12    0.0%    0.0%  v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+     12    0.0%    0.0%  v8::EscapableHandleScope::Escape(unsigned long*)
+     12    0.0%    0.0%  std::string::_M_mutate(unsigned long, unsigned long, unsigned long)
+     11    0.0%    0.0%  std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned long)
+     11    0.0%    0.0%  node::url::(anonymous namespace)::URLHost::ParseHost(char const*, unsigned long, bool, bool) [clone .constprop.77]
+     11    0.0%    0.0%  node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+     10    0.0%    0.0%  v8::internal::libc_memcpy(void*, void const*, unsigned long)
+     10    0.0%    0.0%  v8::internal::libc_memchr(void*, int, unsigned long)
+     10    0.0%    0.0%  v8::Object::Get(v8::Local<v8::Context>, unsigned int)
+     10    0.0%    0.0%  int v8::(anonymous namespace)::WriteUtf8Impl<unsigned char>(v8::internal::Vector<unsigned char const>, char*, int, int, int*)
+      9    0.0%    0.0%  v8::Value::IsFunction() const
+      9    0.0%    0.0%  operator new[](unsigned long)
+      9    0.0%    0.0%  node::NodePlatform::CallOnWorkerThread(std::unique_ptr<v8::Task, std::default_delete<v8::Task> >)
+      9    0.0%    0.0%  node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      8    0.0%    0.0%  v8::internal::SequentialStringKey<unsigned char>::IsMatch(v8::internal::String)
+      8    0.0%    0.0%  v8::internal::Builtin_DateNow(int, unsigned long*, v8::internal::Isolate*)
+      8    0.0%    0.0%  node::AsyncWrap::EmitTraceEventBefore()
+      8    0.0%    0.0%  __mprotect
+      7    0.0%    0.0%  v8::internal::PropertyCallbackArguments::PropertyCallbackArguments(v8::internal::Isolate*, v8::internal::Object, v8::internal::Object, v8::internal::JSObject, v8::Maybe<v8::internal::ShouldThrow>)
+      7    0.0%    0.0%  v8::internal::Builtins::builtin(int)
+      7    0.0%    0.0%  v8::Value::IntegerValue(v8::Local<v8::Context>) const
+      7    0.0%    0.0%  v8::String::NewFromUtf8(v8::Isolate*, char const*, v8::NewStringType, int)
+      7    0.0%    0.0%  v8::HandleScope::HandleScope(v8::Isolate*)
+      7    0.0%    0.0%  v8::ArrayBufferView::HasBuffer() const
+      7    0.0%    0.0%  operator delete(void*)
+      7    0.0%    0.0%  node::Environment::GetNow()
+      7    0.0%    0.0%  fwrite
+      6    0.0%    0.0%  void std::vector<std::string, std::allocator<std::string> >::emplace_back<std::string>(std::string&&)
+      6    0.0%    0.0%  v8::internal::Builtin_TypedArrayPrototypeBuffer(int, unsigned long*, v8::internal::Isolate*)
+      6    0.0%    0.0%  v8::Integer::NewFromUnsigned(v8::Isolate*, unsigned int)
+      6    0.0%    0.0%  v8::Integer::New(v8::Isolate*, int)
+      6    0.0%    0.0%  v8::Array::New(v8::Isolate*, v8::Local<v8::Value>*, unsigned long)
+      6    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<false>::~CallDepthScope()
+      6    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<false>::CallDepthScope(v8::internal::Isolate*, v8::Local<v8::Context>)
+      6    0.0%    0.0%  std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)
+      6    0.0%    0.0%  node::url::(anonymous namespace)::NormalizePort(std::string const&, int)
+      6    0.0%    0.0%  node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      5    0.0%    0.0%  v8::internal::StringSearch<unsigned char, unsigned char>::InitialSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      5    0.0%    0.0%  v8::ArrayBufferView::Buffer()
+      5    0.0%    0.0%  v8::ArrayBuffer::GetContents()
+      5    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+      5    0.0%    0.0%  node::url::(anonymous namespace)::ToASCII(std::string const&, std::string*)
+      5    0.0%    0.0%  node::url::(anonymous namespace)::PercentDecode(char const*, unsigned long)
+      5    0.0%    0.0%  node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.0%    0.0%  node::i18n::ToASCII(node::MaybeStackBuffer<char, 1024ul>*, char const*, unsigned long, node::i18n::idna_mode)
+      5    0.0%    0.0%  node::Buffer::(anonymous namespace)::ParseArrayIndex(node::Environment*, v8::Local<v8::Value>, unsigned long, unsigned long*)
+      5    0.0%    0.0%  __GI___pthread_getspecific
+      4    0.0%    0.0%  v8::internal::libc_memmove(void*, void const*, unsigned long)
+      4    0.0%    0.0%  v8::Value::IsArrayBufferView() const
+      4    0.0%    0.0%  v8::Object::InternalFieldCount()
+      4    0.0%    0.0%  v8::Isolate::GetCurrentContext()
+      4    0.0%    0.0%  v8::ArrayBufferView::ByteLength()
+      4    0.0%    0.0%  std::string::assign(char const*, unsigned long)
+      4    0.0%    0.0%  std::string::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long)
+      4    0.0%    0.0%  node::url::(anonymous namespace)::URLHost::ToStringMove()
+      4    0.0%    0.0%  node::url::(anonymous namespace)::SetArgs(node::Environment*, v8::Local<v8::Value>*, node::url::url_data const&)
+      4    0.0%    0.0%  node::StringBytes::StorageSize(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      4    0.0%    0.0%  node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &node::(anonymous namespace)::Parser::on_chunk_header>::Raw(llhttp__internal_s*)
+      4    0.0%    0.0%  node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  _IO_file_xsputn
+      3    0.0%    0.0%  v8::EscapableHandleScope::EscapableHandleScope(v8::Isolate*)
+      3    0.0%    0.0%  std::string::swap(std::string&)
+      3    0.0%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      3    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      3    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    0.0%    0.0%  std::_Hashtable<std::string, std::pair<std::string const, int>, std::allocator<std::pair<std::string const, int> >, std::__detail::_Select1st, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(std::string const&)
+      3    0.0%    0.0%  node::url::(anonymous namespace)::ParseHost(std::string const&, std::string*, bool, bool) [clone .constprop.76]
+      3    0.0%    0.0%  node::Utf8Value::Utf8Value(v8::Isolate*, v8::Local<v8::Value>)
+      3    0.0%    0.0%  node::AsyncWrap::IsDoneInitializing() const
+      3    0.0%    0.0%  int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  __clock_gettime
+      3    0.0%    0.0%  __GI___pthread_mutex_unlock
+      2    0.0%    0.0%  void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  v8::internal::wasm::AsmJsParser::EqualityExpression()
+      2    0.0%    0.0%  v8::internal::libc_memset(void*, int, unsigned long)
+      2    0.0%    0.0%  v8::internal::Scope::ResolveVariablesRecursively(v8::internal::ParseInfo*)
+      2    0.0%    0.0%  v8::internal::Builtin_ArrayPop(int, unsigned long*, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::AsmJsScanner::Rewind()
+      2    0.0%    0.0%  v8::Value::Uint32Value(v8::Local<v8::Context>) const
+      2    0.0%    0.0%  v8::Value::ToString(v8::Local<v8::Context>) const
+      2    0.0%    0.0%  v8::String::Length() const
+      2    0.0%    0.0%  v8::Isolate::InContext()
+      2    0.0%    0.0%  v8::Context::GetIsolate()
+      2    0.0%    0.0%  v8::Context::Exit()
+      2    0.0%    0.0%  v8::Array::Length() const
+      2    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<true>::~CallDepthScope()
+      2    0.0%    0.0%  v8::(anonymous namespace)::CallDepthScope<true>::CallDepthScope(v8::internal::Isolate*, v8::Local<v8::Context>)
+      2    0.0%    0.0%  std::locale::id::_M_id() const
+      2    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      2    0.0%    0.0%  operator delete[](void*)
+      2    0.0%    0.0%  node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      2    0.0%    0.0%  node::Buffer::HasInstance(v8::Local<v8::Value>)
+      1    0.0%    0.0%  void std::vector<int, v8::internal::ZoneAllocator<int> >::_M_emplace_back_aux<int>(int&&)
+      1    0.0%    0.0%  v8::internal::wasm::AsmJsParser::GetVarInfo(int)
+      1    0.0%    0.0%  v8::internal::wasm::AsmJsParser::BitwiseANDExpression()
+      1    0.0%    0.0%  v8::internal::Zone::New(unsigned long)
+      1    0.0%    0.0%  v8::internal::Variable* v8::internal::Scope::Lookup<(v8::internal::Scope::ScopeLookupMode)0>(v8::internal::VariableProxy*, v8::internal::Scope*, v8::internal::Scope*, v8::internal::Scope*, bool)
+      1    0.0%    0.0%  v8::internal::SequentialStringKey<unsigned short>::IsMatch(v8::internal::String)
+      1    0.0%    0.0%  v8::internal::Scope::Scope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType)
+      1    0.0%    0.0%  v8::internal::Scope::MustAllocate(v8::internal::Variable*)
+      1    0.0%    0.0%  v8::internal::PrototypeIterator::Advance()
+      1    0.0%    0.0%  v8::internal::HandlerTable::HandlerTable(v8::internal::BytecodeArray)
+      1    0.0%    0.0%  v8::internal::FlushInstructionCache(void*, unsigned long)
+      1    0.0%    0.0%  v8::internal::DeclarationScope::DeclarationScope(v8::internal::Zone*, v8::internal::Scope*, v8::internal::ScopeType, v8::internal::FunctionKind)
+      1    0.0%    0.0%  v8::internal::DeclarationScope::AllocateScopeInfos(v8::internal::ParseInfo*, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::CodeDesc::Initialize(v8::internal::CodeDesc*, v8::internal::Assembler*, int, int, int, int, int)
+      1    0.0%    0.0%  v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  v8::internal::AsmJsScanner::ConsumeNumber(int)
+      1    0.0%    0.0%  v8::internal::Accessors::FunctionPrototypeGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  v8::base::TemplateHashMapImpl<void*, void*, v8::base::HashEqualityThenKeyMatcher<void*, bool (*)(void*, void*)>, v8::internal::ZoneAllocationPolicy>::FillEmptyEntry(v8::base::TemplateHashMapEntry<void*, void*>*, void* const&, void* const&, unsigned int, v8::internal::ZoneAllocationPolicy)
+      1    0.0%    0.0%  v8::MicrotasksScope::PerformCheckpoint(v8::Isolate*)
+      1    0.0%    0.0%  v8::Context::GetNumberOfEmbedderDataFields()
+      1    0.0%    0.0%  v8::Context::Enter()
+      1    0.0%    0.0%  v8::ArrayBufferView::ByteOffset()
+      1    0.0%    0.0%  std::string::_Rep::_M_destroy(std::allocator<char> const&)
+      1    0.0%    0.0%  std::string::_M_leak_hard()
+      1    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      1    0.0%    0.0%  std::__detail::_Map_base<std::string, std::pair<std::string const, int>, std::allocator<std::pair<std::string const, int> >, std::__detail::_Select1st, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::string const&)
+      1    0.0%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)
+      1    0.0%    0.0%  std::_Hashtable<std::string, std::pair<std::string const, int>, std::allocator<std::pair<std::string const, int> >, std::__detail::_Select1st, std::equal_to<std::string>, std::hash<std::string>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::string const, int>, true>*)
+      1    0.0%    0.0%  node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding, int*)
+      1    0.0%    0.0%  node::LibuvStreamWrap::IsIPCPipe()
+      1    0.0%    0.0%  node::LibuvStreamWrap::IsAlive()
+      1    0.0%    0.0%  node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      1    0.0%    0.0%  node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::(anonymous namespace)::ScheduleTimer(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  brk
+      1    0.0%    0.0%  __pthread_cond_wait
+      1    0.0%    0.0%  __madvise
+      1    0.0%    0.0%  __lll_lock_wait
+      1    0.0%    0.0%  __errno_location
+      1    0.0%    0.0%  _IO_file_write
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  155075   66.4%  /home/toan/.nvm/versions/node/v12.19.1/bin/node
+  42787   27.6%    /home/toan/.nvm/versions/node/v12.19.1/bin/node
+  32800   76.7%      /home/toan/.nvm/versions/node/v12.19.1/bin/node
+  23399   71.3%        LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+  23068   98.6%          LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+  18419   79.8%            LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   3614   15.7%            LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+   1035    4.5%            LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    331    1.4%          LazyCompile: ~get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+    331  100.0%            LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+   2780    8.5%        LazyCompile: *commitWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:13321:20
+   2780  100.0%          LazyCompile: *commitMutationEffects /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15901:31
+   2766   99.5%            LazyCompile: *invokeGuardedCallbackProd /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:12097:35
+   2628    8.0%        LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+   2628  100.0%          LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+   1330   50.6%            LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+   1295   49.3%            LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+   1915    5.8%        LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   1560   81.5%          LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   1375   88.1%            LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    184   11.8%            LazyCompile: *trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    284   14.8%          LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    284  100.0%            LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+     71    3.7%          LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+     71  100.0%            LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   1040    3.2%        LazyCompile: *widestLine /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/widest-line/index.js:4:20
+   1008   96.9%          LazyCompile: *renderNodeToOutput /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/render-node-to-output.js:30:28
+   1008  100.0%            LazyCompile: *renderNodeToOutput /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/render-node-to-output.js:30:28
+     32    3.1%          LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/measure-text.js:8:19
+     32  100.0%            LazyCompile: ~measureTextNode /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/dom.js:98:34
+    663    2.0%        LazyCompile: *checkAnsi /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:13:19
+    663  100.0%          LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+    662   99.8%            LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   3896    9.1%      LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   3896  100.0%        LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   3895  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   3849   98.8%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+     46    1.2%            LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+   2549    6.0%      LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+   2525   99.1%        LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   2105   83.4%          LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   1886   89.6%            LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    219   10.4%            LazyCompile: *trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    326   12.9%          LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    326  100.0%            LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+     94    3.7%          LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+     94  100.0%            LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+    627    1.5%      LazyCompile: *__rest /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:21:48
+    627  100.0%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+    627  100.0%          LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+    627  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    480    1.1%      LazyCompile: *checkAnsi /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:13:19
+    480  100.0%        LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+    478   99.6%          LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+    373   78.0%            LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+     76   15.9%            LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+     29    6.1%            LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+  32833   21.2%    v8::internal::Builtin_ObjectDefineProperty(int, unsigned long*, v8::internal::Isolate*)
+  31356   95.5%      LazyCompile: *createElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:707:23
+  13893   44.3%        LazyCompile: *createElementWithValidation /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2182:37
+   5789   41.7%          LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+   5779   99.8%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   3193   23.0%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   3193  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   2023   14.6%          RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+   2023  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   1135    8.2%          LazyCompile: *App /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:17:13
+   1135  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    961    6.9%          LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+    961  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    622    4.5%          LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+    622  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   9126   29.1%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   9124  100.0%          LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   9124  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   6907   22.0%        LazyCompile: *Text /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Text.js:12:14
+   6907  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   6907  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    597    1.9%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    593   99.3%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    593  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    371    1.2%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    371  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    371  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   1284    3.9%      LazyCompile: *defineKeyPropWarningGetter /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:578:36
+   1284  100.0%        LazyCompile: *createElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:707:23
+    630   49.1%          LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    630  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    320   24.9%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    320  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    213   16.6%          RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+    213  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    115    9.0%          LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+    115  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+  23619   15.2%    LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+  23466   99.4%      LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+  19033   81.1%        LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+  16782   88.2%          LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+  12513   74.6%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+   2326   13.9%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+   1409    8.4%            LazyCompile: *leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    534    3.2%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+   2249   11.8%          LazyCompile: *trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+   2249  100.0%            LazyCompile: *timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+   3396   14.5%        LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+   3396  100.0%          LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   3140   92.5%            LazyCompile: ~invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    256    7.5%            LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+   1037    4.4%        LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+   1037  100.0%          LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   1037  100.0%            LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+   8554    5.5%    LazyCompile: *createElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:707:23
+   5279   61.7%      LazyCompile: *createElementWithValidation /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2182:37
+   2034   38.5%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+   2027   99.7%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   2027  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   1191   22.6%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   1191  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   1191  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    709   13.4%        RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+    709  100.0%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    709  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    698   13.2%        LazyCompile: *App /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:17:13
+    698  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    698  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    356    6.7%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+    356  100.0%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    356  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    233    4.4%        LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+    233  100.0%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    233  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   1622   19.0%      LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   1622  100.0%        LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   1622  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   1596   98.4%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+     25    1.5%            LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+   1242   14.5%      LazyCompile: *Text /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Text.js:12:14
+   1242  100.0%        LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   1242  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   1237   99.6%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+    163    1.9%      LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    163  100.0%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    163  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    163  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    106    1.2%      LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    106  100.0%        LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    106  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    106  100.0%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+   6424    4.1%    LazyCompile: *prepareUpdate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:125:20
+   6421  100.0%      LazyCompile: *completeWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:11050:22
+   6421  100.0%        LazyCompile: *completeUnitOfWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15356:28
+   6352   98.9%          LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+   3176   50.0%            LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+   3167   49.9%            LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+     67    1.0%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+     67  100.0%            LazyCompile: ~renderRootSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15216:24
+   5712    3.7%    v8::internal::Builtin_ObjectFreeze(int, unsigned long*, v8::internal::Isolate*)
+   5704   99.9%      LazyCompile: *createElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:707:23
+   2354   41.3%        LazyCompile: *createElementWithValidation /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2182:37
+    814   34.6%          LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    810   99.5%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    515   21.9%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    515  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    505   21.5%          LazyCompile: *App /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:17:13
+    505  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    260   11.0%          RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+    260  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    123    5.2%          LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+    123  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    105    4.5%          LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+    105  100.0%            LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+   1221   21.4%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   1221  100.0%          LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   1221  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    915   16.0%        LazyCompile: *Text /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Text.js:12:14
+    915  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    915  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    584   10.2%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    581   99.5%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    581  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    297    5.2%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    297  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    297  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    213    3.7%        RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+    213  100.0%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    213  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    101    1.8%        LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+    101  100.0%          LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    101  100.0%            LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+   3943    2.5%    LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   3142   79.7%      LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   2812   89.5%        LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+   2080   74.0%          LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+   2080  100.0%            LazyCompile: *commitRootImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15555:24
+    405   14.4%          LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    246   60.7%            LazyCompile: ~timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+    159   39.3%            LazyCompile: *timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+    230    8.2%          LazyCompile: *leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    230  100.0%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+     97    3.4%          LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+     97  100.0%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+    329   10.5%        LazyCompile: *trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    329  100.0%          LazyCompile: *timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+    329  100.0%            LazyCompile: *push /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:204:14
+    587   14.9%      LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    587  100.0%        LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+    551   93.9%          LazyCompile: ~invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    215   39.0%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    170   30.9%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+    104   18.9%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+     62   11.3%            LazyCompile: ~debounced /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10468:25
+     36    6.1%          LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+     17   47.2%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+     10   27.8%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+      9   25.0%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    214    5.4%      LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    214  100.0%        LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+    214  100.0%          LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    124   57.9%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+     67   31.3%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+     23   10.7%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+   3202    2.1%    LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   3202  100.0%      LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   3201  100.0%        LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   3164   98.8%          LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+   3164  100.0%            LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+     37    1.2%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+     37  100.0%            LazyCompile: ~renderRootSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15216:24
+   2488    1.6%    LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   2487  100.0%      LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   2447   98.4%        LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+   2447  100.0%          LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+   1275   52.1%            LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+   1171   47.9%            LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+     39    1.6%        LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+     39  100.0%          LazyCompile: ~renderRootSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15216:24
+     39  100.0%            LazyCompile: ~performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+   2310    1.5%    v8::internal::Builtin_StringPrototypeNormalizeIntl(int, unsigned long*, v8::internal::Isolate*)
+   2310  100.0%      LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+   2291   99.2%        LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   1808   78.9%          LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   1613   89.2%            LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    195   10.8%            LazyCompile: *trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    368   16.1%          LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    368  100.0%            LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+    115    5.0%          LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    115  100.0%            LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   2234    1.4%    LazyCompile: *__rest /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:21:48
+   2231   99.9%      LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+   2231  100.0%        LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+   2231  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+   2202   98.7%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+     29    1.3%            LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+   1849    1.2%    LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+   1849  100.0%      LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+    926   50.1%        LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+    923   99.7%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+    778   84.3%            LazyCompile: *emit events.js:262:44
+     76    8.2%            LazyCompile: ~dispatchAction /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7482:24
+     69    7.5%            LazyCompile: *onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+    920   49.8%        LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+    656   71.3%          LazyCompile: *dispatchAction /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7482:24
+    503   76.7%            LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+     80   12.2%            LazyCompile: ~onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+     72   11.0%            LazyCompile: *onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+    264   28.7%          LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+    264  100.0%            LazyCompile: *emit events.js:262:44
+
+  11131    4.8%  epoll_pwait
+
+   9662    4.1%  LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+   9550   98.8%    LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   7753   81.2%      LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   6871   88.6%        LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+   5155   75.0%          LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+   5155  100.0%            LazyCompile: *commitRootImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15555:24
+    923   13.4%          LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    525   56.9%            LazyCompile: ~timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+    398   43.1%            LazyCompile: *timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+    581    8.5%          LazyCompile: *leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    581  100.0%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+    212    3.1%          LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    212  100.0%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+    881   11.4%        LazyCompile: *trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    881  100.0%          LazyCompile: *timerExpired /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10435:28
+    881  100.0%            LazyCompile: *push /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:204:14
+   1404   14.7%      LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+   1404  100.0%        LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+   1306   93.0%          LazyCompile: ~invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    504   38.6%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+    393   30.1%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+    248   19.0%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    161   12.3%            LazyCompile: ~debounced /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10468:25
+     98    7.0%          LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+     39   39.8%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+     36   36.7%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+     23   23.5%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+    393    4.1%      LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    393  100.0%        LazyCompile: ~Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+    393  100.0%          LazyCompile: *invokeFunc /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10395:26
+    217   55.2%            LazyCompile: *resetAfterCommit /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:33:23
+    123   31.3%            LazyCompile: ~trailingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10444:28
+     53   13.5%            LazyCompile: ~leadingEdge /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/lodash/lodash.js:10405:27
+
+   4691    2.0%  v8::internal::CompilationCacheRegExp::Lookup(v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int>)
+   4691  100.0%    /home/toan/.nvm/versions/node/v12.19.1/bin/node
+   4691  100.0%      /home/toan/.nvm/versions/node/v12.19.1/bin/node
+   4595   98.0%        LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+   4563   99.3%          LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+   3614   79.2%            LazyCompile: *Ink.onRender /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/ink.js:45:25
+    746   16.3%            LazyCompile: ~exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+    203    4.4%            LazyCompile: *exports.default /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/renderer.js:9:19
+     55    1.2%        LazyCompile: *checkAnsi /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:13:19
+     55  100.0%          LazyCompile: *module.exports /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/slice-ansi/index.js:50:18
+     54   98.2%            LazyCompile: *get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+      1    1.8%            LazyCompile: ~get /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/output.js:23:8
+
+   3591    1.5%  LazyCompile: *createElement /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:707:23
+   1858   51.7%    LazyCompile: *createElementWithValidation /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react/cjs/react.development.js:2182:37
+    694   37.4%      LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    690   99.4%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    690  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    690  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    434   23.4%      LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    434  100.0%        LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    434  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    431   99.3%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+    255   13.7%      RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+    255  100.0%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    255  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    255  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    234   12.6%      LazyCompile: *App /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:17:13
+    234  100.0%        LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    234  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    227   97.0%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+      7    3.0%            LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+    130    7.0%      LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:94:24
+    130  100.0%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    130  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    130  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+     82    4.4%      LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+     82  100.0%        LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+     82  100.0%          LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+     82  100.0%            LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    798   22.2%    LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Box.js:38:32
+    798  100.0%      LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+    797   99.9%        LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    788   98.9%          LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+    788  100.0%            LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+      9    1.1%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+      9  100.0%            LazyCompile: ~renderRootSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15216:24
+    608   16.9%    LazyCompile: *Text /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/components/Text.js:12:14
+    608  100.0%      LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    608  100.0%        LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    599   98.5%          LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+    599  100.0%            LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+      9    1.5%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+      9  100.0%            LazyCompile: ~renderRootSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15216:24
+    122    3.4%    LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:47:38
+    121   99.2%      LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+    121  100.0%        LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+    121  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+    120   99.2%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+     75    2.1%    LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+     75  100.0%      LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+     75  100.0%        LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+     74   98.7%          LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+     74  100.0%            LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+      1    1.3%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+      1  100.0%            LazyCompile: ~renderRootSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15216:24
+     41    1.1%    LazyCompile: *updateForwardRef /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8445:26
+     41  100.0%      LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+     41  100.0%        LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+     41  100.0%          LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+     21   51.2%            LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+     19   46.3%            LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+      1    2.4%            LazyCompile: *<anonymous> /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2541:55
+     36    1.0%    RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~])) {26}
+     36  100.0%      LazyCompile: *FilterTable /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/filter_table.js:10:21
+     36  100.0%        LazyCompile: *updateFunctionComponent /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:8756:33
+     36  100.0%          LazyCompile: *beginWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:10271:19
+     36  100.0%            LazyCompile: *beginWork$1 /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:16498:26
+
+   2404    1.0%  LazyCompile: *prepareUpdate /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/ink/build/reconciler.js:125:20
+   2348   97.7%    LazyCompile: *completeWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:11050:22
+   2348  100.0%      LazyCompile: *completeUnitOfWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15356:28
+   2329   99.2%        LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+   1185   50.9%          LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+    870   73.4%            LazyCompile: *dispatchAction /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7482:24
+    312   26.3%            LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+   1143   49.1%          LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+   1138   99.6%            LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+     55    2.3%    LazyCompile: *completeUnitOfWork /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15356:28
+     55  100.0%      LazyCompile: *performSyncWorkOnRoot /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:14790:31
+     36   65.5%        LazyCompile: *flushSyncCallbackQueueImpl /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2531:36
+     36  100.0%          LazyCompile: *workLoopSync /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:15265:22
+     34   94.4%            LazyCompile: *emit events.js:262:44
+      2    5.6%            LazyCompile: *onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+     19   34.5%        LazyCompile: *flushSyncCallbackQueue /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:2521:32
+     13   68.4%          LazyCompile: *dispatchAction /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/react-reconciler/cjs/react-reconciler.development.js:7482:24
+     10   76.9%            LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+      2   15.4%            LazyCompile: ~onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+      1    7.7%            LazyCompile: *onMessage /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/dist/ui.js:67:32
+      6   31.6%          LazyCompile: *siftUp /home/toan/Documents/dev/toban/wikimedia-eventstream-viewer/node_modules/scheduler/cjs/scheduler.development.js:230:16
+      6  100.0%            LazyCompile: *emit events.js:262:44
+

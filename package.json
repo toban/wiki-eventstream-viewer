@@ -12,7 +12,8 @@
 	},
 	"scripts": {
 		"build": "tsc && chmod +x dist/cli.js",
-		"start": "npm run build && dist/cli.js",
+		"start": "npm run build && node dist/cli.js",
+		"profile": "npm run build && node --prof dist/cli.js",
 		"pretest": "npm run build",
 		"test": "xo && ava"
 	},

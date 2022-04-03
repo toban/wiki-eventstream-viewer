@@ -8,6 +8,7 @@ export interface event {
     id: string;
     date: string;
     time: string;
+    stream: string;
 }
 export interface filteredEvent extends event {
     matches: string[];
@@ -16,7 +17,7 @@ export interface domain {
     domain: string;
     title: string;
     numEvents: number;
-    eventBuffer: event[];
+    lastEvent: event;
 }
 export declare enum Ui {
     FilterConfig = 1,

@@ -10,7 +10,8 @@ export interface event {
 	uri: string
 	id: string
 	date: string,
-	time: string
+	time: string,
+	stream: string
 }
 
 export interface filteredEvent extends event{
@@ -21,7 +22,8 @@ export interface domain {
 	domain: string
 	title: string
 	numEvents: number
-	eventBuffer: event[]
+	lastEvent: event
+	//eventBuffer: event[]
 }
 
 export enum Ui {
@@ -38,6 +40,10 @@ const App: FC<{name?: string}> = () => {
 
 	const bufferSize: number = 10;
 	const maxHeight: number = 20;
+	
+	const [numEvents, setNumEvents] = React.useState<number>(0);
+	const [numFilteredEvents, setNumFilteredEvents] = React.useState<number>(0);
+
 	const [domains, setDomains] = React.useState(new Map<string, domain>());
 	const [domainStack, setDomainStack] = React.useState<string[]>([]);
 	const [filterBuffer, setFilterBuffer] = React.useState<filteredEvent[]>([]);
@@ -48,7 +54,8 @@ const App: FC<{name?: string}> = () => {
 	const [socket, setSocket] = React.useState<EventSourceSocket>();
 
 	React.useEffect(() => {
-		const newSocket = new EventSource( 'https://stream.wikimedia.org/v2/stream/recentchange' );
+
+		const newSocket = new EventSource( 'https://stream.wikimedia.org/v2/stream/page-create,page-delete,page-links-change,page-move,page-properties-change,page-undelete,recentchange,revision-create,revision-score');
 		setSocket({socket: newSocket, filter: undefined});
 		newSocket.onmessage = onMessage;
 		return () => newSocket.close();
@@ -92,72 +99,90 @@ const App: FC<{name?: string}> = () => {
 
 	},);
 
+	const parseUser = function (data: any): string {
+		return data.user ? data.user : data.performer?.user_text 
+
+	}
 	const onMessage = function (event: MessageEvent) {
 
 		if( event.type == 'message' ) {
+			setNumEvents(prev => prev + 1);
 			const parsedData = JSON.parse(event.data);
 			const domain = parsedData.meta.domain;
+			const user = parseUser(parsedData);
+			const uri = parsedData.meta.uri.replace('https://' + domain, '');
 			
 			if(socket?.filter) {
 
-				const matches = event.data.match(socket.filter);
-				if( matches && matches.length ) {
+				//const matches = event.data.match(socket.filter);
+				if( socket.filter.test(event.data)) { //matches && matches.length ) {
+					setNumFilteredEvents(prev => prev + 1 );
 					setFilterBuffer(previousFilterBuffer => [
 						{
 							domain: domain,
 							title: parsedData.title,
-							user: parsedData.user,
-							uri: parsedData.meta.uri,
+							user: user,
+							uri: uri,
 							id: parsedData.meta.id,
 							date: parsedData.meta.dt.slice(0,10),
 							time: parsedData.meta.dt.slice(11,19),
-							matches: matches
+							matches: [],
+							stream: parsedData.meta.stream
 						},
 						...previousFilterBuffer
 					].slice(0, maxHeight));
 				}
 			}
 
-			setDomains(previousDomains => {
-				var currentDomain = previousDomains.get(domain);
+			// setDomains(previousDomains => {
+			// 	var currentDomain = previousDomains.get(domain);
 
-				if( !currentDomain ) {
-					currentDomain = {domain: domain, title: "asdf", numEvents: 0, eventBuffer: []}
-				}
+			// 	if( !currentDomain ) {
+			// 		currentDomain = {domain: domain, title: "asdf", numEvents: 0, lastEvent: {
+			// 			domain: domain,
+			// 			title: parsedData.title,
+			// 			user: user,
+			// 			uri: parsedData.meta.uri,
+			// 			id: parsedData.meta.id,
+			// 			date: parsedData.meta.dt.slice(0,10),
+			// 			time: parsedData.meta.dt.slice(11,19),
+			// 			stream: parsedData.meta.stream
+			// 		}}
+			// 	}
 
-				if( currentDomain.eventBuffer.length >= bufferSize ) {
-					currentDomain.eventBuffer.pop();
-				}
+			// 	//if( currentDomain.eventBuffer.length >= bufferSize ) {
+			// 	//	currentDomain.eventBuffer.pop();
+			// 	//}
 
-				currentDomain.eventBuffer.push(
-					{
-						domain: domain,
-						title: parsedData.title,
-						user: parsedData.user,
-						uri: parsedData.meta.uri,
-						id: parsedData.meta.id,
-						date: parsedData.meta.dt.slice(0,10),
-						time: parsedData.meta.dt.slice(11,19)
-					}
-				)
+			// 	//currentDomain.eventBuffer.push(
+			// 	//currentDomain?.lastEvent =	
+			// 	//)
 
-				currentDomain.numEvents+=1;
+			// 	currentDomain.numEvents+=1;
 
-				return new Map<string, domain>(previousDomains).set(domain, currentDomain)
-			});
+			// 	return previousDomains.set(domain, currentDomain)
+			// });
 				
-			setDomainStack( prevStack => {
-				return [parsedData.meta.domain, ...prevStack.filter(x=> x !== parsedData.meta.domain)].slice(0, maxHeight)
-			})
+			// setDomainStack( prevStack => {
+			// 	const currentIndex = prevStack.indexOf(parsedData.meta.domain);
+			// 	if(currentIndex == -1) {
+			// 		return [parsedData.meta.domain, ...prevStack].slice(0, maxHeight)
+			// 	} 
+
+			// 	prevStack.splice(currentIndex, 1)
+
+			// 	return [parsedData.meta.domain, ...prevStack]  
+			// })
 		}
 	}
 	return <Box flexDirection="column">
 			<Box>
-				<Text color="green">{ socket?.socket?.readyState == 1 ? "✅" : "❌" } {socket?.filter?.source}</Text>
+				<Text color="green">{ socket?.socket?.readyState == 1 ? "✅" : "❌" } </Text>
+				{/* {socket?.filter?.source} :: {numFilteredEvents}/{numEvents} */}
 			</Box>
 				<Box display={menuState == Ui.FilterConfig ? "flex" : "none"} borderStyle="classic">
 					<Text>Filter: </Text>
-					<TextInput value={query} onChange={setQuery} />
+					<TextInput value={query} onChange={menuState == Ui.FilterConfig ? setQuery : () => {}} />
 				</Box>
 				<Box display={menuState == Ui.FilterTable ? "flex" : "none"}>
 					<FilterTable filteredEvents={filterBuffer} domains={ domainStack.map( d => domains.get(d)! ) } appMenuState={menuState} />

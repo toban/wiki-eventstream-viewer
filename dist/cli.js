@@ -24,4 +24,6 @@ const ui_1 = __importDefault(require("./ui"));
 // 		}
 // 	}
 // });
+const streams = [];
+//render(<StreamSelector />);
 (0, ink_1.render)(react_1.default.createElement(ui_1.default, null));
